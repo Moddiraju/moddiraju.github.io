@@ -2594,7 +2594,7 @@ input, select, textarea {
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
+		background-position: center, center, center;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
 		color: rgba(255, 255, 255, 0.5);
@@ -2630,9 +2630,9 @@ input, select, textarea {
 		/* ADDED DARK TINT: linear-gradient creates a 50% dark mask over the bg image */
 		background-image: url("images/overlay.png"), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/bg.jpg");
 		
-		background-position: top left, center, top left;
+		background-position: center, center, center;
 		background-repeat: repeat, no-repeat, no-repeat;
-		background-size: auto, cover, 150%;
+		background-size: auto, cover, cover;
 		
 		/* EDITED: Changed from 0.5 to 1.0 for better readability */
 		color: rgba(255, 255, 255, 1.0); 
@@ -3096,7 +3096,7 @@ input, select, textarea {
 
 			#header {
 				background-attachment: scroll;
-				background-position: top left, center center;
+				background-position: center, center center;
 				background-size: auto,		cover;
 				left: auto;
 				padding: 6em 4em;
