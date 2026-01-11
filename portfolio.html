@@ -1,10 +1,64 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Portfolio - Project Divisions</title>
+		<title>Portfolio</title>
+        <link rel="icon" type="image/png" href="images/favicon.jpg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /* Container for the link acting as a button */
+        ul.labeled-icons li a.sidebar-button {
+            display: flex;
+            align-items: center;
+            padding: 0.75em 1em; /* Increased padding for a better rectangle shape */
+            margin-left: -1em; 
+            border-radius: 0.35em;
+            border-bottom: none !important; /* Removes dotted line */
+            transition: background-color 0.2s ease;
+            width: 100%;
+            text-decoration: none;
+            color: #ffffff !important; /* Ensures text is white like the screenshot */
+        }
+        
+        ul.labeled-icons li a.sidebar-button h3.icon:before {
+            font-size: 1.5rem; /* Adjust this so the 'hat' looks proportionally correct next to the images */
+            color: #ffffff;    /* Or whatever color matches your logo theme */
+            display: block;
+        }
+        /* Fix the size of the logo image */
+        ul.labeled-icons li a.sidebar-button h3.icon img {
+            width: 2.5rem;   /* Fixed width */
+            height: 2.5rem;  /* Fixed height */
+            display: block;
+            object-fit: contain;
+            border-radius: 6px; /* Rounded corners for the logo itself */
+        }
+
+        /* Ensure the logo container doesn't shift */
+        ul.labeled-icons li a.sidebar-button h3 {
+            margin: 0 1rem 0 0 !important;
+            padding: 0 !important;
+            position: static !important;
+            width: auto !important;
+        }
+
+        ul.labeled-icons li a.sidebar-button:hover {
+            background-color: rgba(0, 0, 0, 0.4) !important;
+            border-bottom: none !important;
+        }
+        #main > section {
+        scroll-margin-top: 15vh; 
+        }
+        header.major h2 img.section-logo {
+            width: 200px;        /* Set your specific width here */
+            max-width: 100%;     /* Ensures it doesn't break on smaller screens */
+            height: auto;        /* Maintains the original aspect ratio */
+            display: block;
+            margin-bottom: 1rem; /* Adds space before the horizontal line */
+        }
+
+        </style>
 	</head>
 	<body class="is-preload">
 
@@ -20,17 +74,29 @@
 				<nav>
 					<ul class="labeled-icons">
 						<li>
-							<h3 class="icon solid fa-bolt"><span class="label">Base Power</span></h3>
-							<a href="#base-power">Base Power</a>
-						</li>
+                            <a href="#base-power" class="sidebar-button">
+                                <h3 class="icon"><img src="images/logos/base.jpg" alt="Base Power Logo"></h3>
+                                Base Power Company
+                            </a>
+                        </li>
 						<li>
-							<h3 class="icon solid fa-robot"><span class="label">Contoro Robotics</span></h3>
-							<a href="#contoro-robotics">Contoro Robotics</a>
-						</li>
+                            <a href="#contoro-robotics" class="sidebar-button">
+                                <h3 class="icon"><img src="images/logos/contoro.jpg" alt="Contoro Logo"></h3>
+                                Contoro Robotics
+                            </a>
+                        </li>
 						<li>
-							<h3 class="icon solid fa-graduation-cap"><span class="label">Class Projects</span></h3>
-							<a href="#class-projects">Class Projects</a>
-						</li>
+                            <a href="#class-projects" class="sidebar-button">
+                                <h3 class="icon"><img src="images/logos/LHR.png" alt="LHR Logo"></h3>
+                                Longhorn Racing Electric
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#class-projects" class="sidebar-button">
+                                <h3 class="icon"><img src="images/logos/Longhorns.png" alt="LHR Logo"></h3>
+                                Class Projects
+                            </a>
+                        </li>
 					</ul>
 				</nav>
 
@@ -50,43 +116,61 @@
 
 			<section id="base-power">
 				<header class="major">
-					<h2>Base Power</h2>
+					<h2><img src="images/largelogos/base.png" alt="BaseLongLogo" class="section-logo"></h2>
 				</header>
 				<div class="row">
 					<article class="col-6 col-12-xsmall work-item">
-						<a href="gen3.html" class="image fit"><img src="images/thumbs/01.jpg" alt="Gen3 Platform" /></a>
+						<a href="proj/platform.html" class="image fit"><img src="images/proj/gen3/pallet_top.png" alt="Gen3 Platform" /></a>
 						<h3>Gen3 Platform</h3>
 						<p>Expansion of the Gen3 power architecture and delivery systems.</p>
 					</article>
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="power-b.html" class="image fit"><img src="images/thumbs/02.jpg" alt="" /></a>
-						<h3>Battery Management</h3>
-						<p>High-efficiency cooling and charging logic for lithium arrays.</p>
+						<h3>32 Thermocouple in-house DAQ</h3>
+						<p>32 Thermocouple in-house DAQ at a fraction of OTS DAQ prices</p>
 					</article>
 				</div>
 			</section>
 
 			<section id="contoro-robotics">
 				<header class="major">
-					<h2>Contoro Robotics</h2>
+					<h2><img src="images/largelogos/contoro.jpg" alt="ContoroLongLogo" class="section-logo"></h2>
 				</header>
 				<div class="row">
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="contoro-a.html" class="image fit"><img src="images/thumbs/03.jpg" alt="" /></a>
-						<h3>Kinematic Analysis</h3>
+						<h3>Teleoperation Exoskeleton</h3>
 						<p>Custom 6-DOF arm control algorithms and path planning.</p>
 					</article>
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="contoro-b.html" class="image fit"><img src="images/thumbs/04.jpg" alt="" /></a>
-						<h3>Vision Systems</h3>
+						<h3></h3>
 						<p>Integration of depth cameras for autonomous grasping.</p>
 					</article>
 				</div>
 			</section>
 
+            <section id="longhorn-racing">
+				<header class="major">
+					<h2><img src="images/largelogos/LHR.png" alt="LHRLongLogo" class="section-logo"></h2>
+				</header>
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="class-a.html" class="image fit"><img src="images/thumbs/05.jpg" alt="" /></a>
+						<h3>Senior Design</h3>
+						<p>Final capstone project details and engineering documentation.</p>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="class-b.html" class="image fit"><img src="images/thumbs/06.jpg" alt="" /></a>
+						<h3>Embedded Systems</h3>
+						<p>Real-time OS implementation on ARM-based microcontrollers.</p>
+					</article>
+				</div>
+            </section>
+
 			<section id="class-projects">
 				<header class="major">
-					<h2>Class Projects</h2>
+					<h2><img src="images/largelogos/UT_.png" alt="ClassLongLogo" class="section-logo"></h2>
 				</header>
 				<div class="row">
 					<article class="col-6 col-12-xsmall work-item">

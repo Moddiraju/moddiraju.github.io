@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gen3 Platform - Manoj Oddiraju</title>
+        <link rel="icon" type="image/png" href="../images/favicon.jpg">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+        <style>
+            /* Reusing your custom sidebar button styles for consistency */
+            ul.labeled-icons li a.sidebar-button {
+                display: flex;
+                align-items: center;
+                padding: 0.75em 1em;
+                margin-left: -1em; 
+                border-radius: 0.35em;
+                border-bottom: none !important;
+                transition: background-color 0.2s ease;
+                width: 100%;
+                text-decoration: none;
+                color: #ffffff !important;
+            }
+
+            ul.labeled-icons li a.sidebar-button h3 {
+                margin: 0 1rem 0 0 !important;
+                padding: 0 !important;
+                position: static !important;
+                width: auto !important;
+            }
+
+            ul.labeled-icons li a.sidebar-button:hover {
+                background-color: rgba(0, 0, 0, 0.4) !important;
+            }
+
+            #main > section {
+                scroll-margin-top: 15vh; 
+            }
+
+            .project-image-main {
+                margin-bottom: 2em;
+                border-radius: 0.35em;
+            }
+            
+            .comparison-row {
+                text-align: center;
+            }
+
+            .comparison-row .image-caption {
+                display: block;
+                margin-top: 1em;
+                font-family: "Georgia", serif; /* Matches your preferred site font */
+                font-style: italic;
+                font-size: 0.9em;
+                color: #555;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<header id="header">
+			<div class="inner">
+				<ul class="actions stacked">
+                    <li><a href="../portfolio.html" class="button primary small icon solid fa-arrow-left">Return to Portfolio</a></li>
+				</ul>
+
+				<hr />
+
+                <nav>
+                    <ul class="labeled-icons">
+                        <li>
+                            <a href="#overview" class="sidebar-button">
+                                Overview
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#design" class="sidebar-button">
+                                Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#impact" class="sidebar-button">
+                                Impact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+			</div>
+
+			<footer id="footer">
+				<div class="inner">
+					<ul class="copyright">
+						<li>&copy; 2026 Manoj Oddiraju</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+		</header>
+
+		<div id="main">
+
+			<section id="overview">
+				<header class="major">
+					<h2>Gen3 Platform (Proprietary)</h2>
+                    <p>Proprietary Custom 2-in-1 Shipping Pallet and Platform</p>
+				</header>
+                <div class="row comparison-row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="../images/proj/gen3/pallet_top.png" alt="Top View" /></span>
+                        <p class="image-caption">Isometric View: Install Configuration</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="../images/proj/gen3/pallet_down.png" alt="Bottom View" /></span>
+                        <p class="image-caption">Isometric View: Factory Configuration</p>
+                    </article>
+                </div>
+                <h3>The goal of this product is to create an addition to a new generation of batteries. It serves as both a platform
+                    during installation and as a pallet for warehouse logistics. The product is proprietary so all images are blurred
+                    and product details are kept minimal.
+                </h3>
+			</section>
+
+			<section id="design">
+				<h2>Design</h2>
+                <h4>This project was transferred to me by a previous intern. 
+                    I owned this project from mid-stage design through mass-production.</h4>
+                <div class="row comparison-row">
+                    <article class="col-12 col-12-xsmall work-item">
+                        <span class="image fit"><img src="../images/proj/gen3/platformflow.png" alt="Top View" /></span>
+                        <p class="image-caption">Project Flowchart</p>
+                    </article>
+                </div>
+				
+				<div class="row">
+					<article class="col-6 col-12-xsmall work-item">
+						<h3>Design choices</h3>
+						<ul>
+                            <li>
+                                Injection Molding chosen for ease of ramp to mass-production
+                            </li>
+                            <li>
+                                Material selection based on meeting specific UL standards
+                            </li>
+                            <li>
+                                Worst-case tolerance stack-up used to ensure functionality while minimizing
+                                manufacturing complexity/part price
+                            </li>
+                            <li>
+                                Factory-friendly design allows smooth warehouse logistics
+                            </li>
+                        </ul>
+					</article>
+					<article class="col-6 col-12-xsmall work-item">
+						<h3>Evaluation</h3>
+						<ul>
+                            <li>
+                                Material tested under load with appropriate temperature and humidity conditions
+                                to simulate life
+                            </li>
+                            <li>
+                                Worst-case tolerance stack-up used to ensure functionality while minimizing
+                                manufacturing complexity/part price
+                            </li>
+                            <li>
+                                Factory-friendly design allows smooth warehouse logistics
+                            </li>
+                        </ul>
+					</article>
+				</div>
+			</section>
+
+			<section id="impact">
+                <div>
+				<h3>Impact</h3>
+
+                <h4>This product helped speed up customer installations substantially.
+                </h4>
+				</div>
+			</section>
+
+		</div>
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.poptrox.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

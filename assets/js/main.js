@@ -14,7 +14,7 @@
 		settings = {
 
 			// Parallax background effect?
-				parallax: true,
+				parallax: false,
 
 			// Parallax factor (lower = more intense, higher = less intense).
 				parallaxFactor: 20
@@ -98,7 +98,7 @@
 		// Lightbox gallery.
 			$window.on('load', function() {
 
-				$('#two').poptrox({
+				$('#projects').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
@@ -110,6 +110,11 @@
 					usePopupEasyClose: false,
 					usePopupNav: true,
 					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+
+                    onReady: function() {
+                    // This prevents the popup from showing and follows the link instead
+                    window.location.href = this.obj.attr('href');
+                    }
 				});
 
 			});
