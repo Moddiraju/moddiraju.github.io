@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Custom DAQ - Manoj Oddiraju</title>
+        <link rel="icon" type="image/png" href="../images/favicon.jpg">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+        <style>
+            /* Reusing your custom sidebar button styles for consistency */
+            ul.labeled-icons li a.sidebar-button {
+                display: flex;
+                align-items: center;
+                padding: 0.75em 1em;
+                margin-left: -1em; 
+                border-radius: 0.35em;
+                border-bottom: none !important;
+                transition: background-color 0.2s ease;
+                width: 100%;
+                text-decoration: none;
+                color: #ffffff !important;
+            }
+
+            ul.labeled-icons li a.sidebar-button h3 {
+                margin: 0 1rem 0 0 !important;
+                padding: 0 !important;
+                position: static !important;
+                width: auto !important;
+            }
+
+            ul.labeled-icons li a.sidebar-button:hover {
+                background-color: rgba(0, 0, 0, 0.4) !important;
+            }
+
+            #main > section {
+                scroll-margin-top: 15vh; 
+            }
+
+            .project-image-main {
+                margin-bottom: 2em;
+                border-radius: 0.35em;
+            }
+            
+            .comparison-row {
+                text-align: center;
+            }
+
+            .comparison-row .image-caption {
+                display: block;
+                margin-top: 1em;
+                font-family: "Georgia", serif; /* Matches your preferred site font */
+                font-style: italic;
+                font-size: 0.9em;
+                color: #555;
+            }
+
+            #header #footer {
+            display: none !important;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<header id="header">
+			<div class="inner">
+				<ul class="actions stacked">
+                    <li><a href="../portfolio.html" class="button primary small icon solid fa-arrow-left">Return to Portfolio</a></li>
+				</ul>
+
+				<hr />
+
+                <nav>
+                    <ul class="labeled-icons">
+                        <li>
+                            <a href="#overview" class="sidebar-button">
+                                Overview
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Layout" class="sidebar-button">
+                                Hardware Layout
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Board" class="sidebar-button">
+                                Board
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+			</div>
+
+			<footer id="footer">
+				<div class="inner">
+					<ul class="copyright">
+						<li>&copy; 2026 Manoj Oddiraju</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+		</header>
+
+		<div id="main">
+
+			<section id="overview">
+				<header class="major">
+					<h2>Custom DAQ (In Progress)</h2>
+                    <p>Isolated DAQ capable of reading 32 thermocouples simultaneously</p>
+				</header>
+                <h3>This project was handed to me to continue outside of Base Power (and eventually share the final product with them).
+                    The schematic is currently finished, and I intend on finishing the board soon. I am developing firmware in parallel,
+                    which I intend on testing once I get a board in hand. I'll be very happy to discuss details
+                    about this project in any interview!
+                </br>
+                </br>
+                    The intent of this project is to develop a DAQ capable of reading 32 thermocouples simultaneously while isolating the thermocouples
+                    from the primary board to protect against any voltage spikes.
+                </h3>
+			</section>
+
+			<section id="Layout">
+				<h2>Hardware Layout</h2>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="../images/proj/DAQ/daqflow.png" alt="Top View" /></span>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h4>
+                            The general layout of this DAQ is composed of 4 Thermocouple "banks" containing 8 thermocouples each.
+                        </br>
+                        </br>
+                            The idea is that if an unprotected thermocouple were to come into contact with a high voltage source,
+                            it would only burn out the "bank" that it was connected to, therefore saving the rest of the board.
+                        </br>
+                        </br>
+                            Each bank has 8 thermocouples connected to an LTC2986 (with appropriate decoupling capacitors).
+                            The LTC then communicates over SPI to a central STMH723 through an ISO7762 Digital Isolator. 
+                        </br>
+                        </br>
+                            The board itself is a 4-layer board, with internal power and ground planes. The board is composed of 5 regions,
+                            the 4 "banks" and a central region with all necessary hardware for the STM32. Each region maintains a 6mm "gap"
+                            from all other regions to ensure that the isolators (at 1.5kV) are the limiting factor.
+                        </br>
+                        </br>
+                            The STM Communicates with a PC over a 16-pin standard USB-C Header, which also acts as the power source for
+                            the entire board when it is in operation.
+                    </h4>
+                    </article>
+                        
+                </div>
+			</section>
+
+            <section id="Board">
+				<h2>Board (In Progress)</h2>
+                <h4>This project was transferred to me by a previous intern. 
+                    I owned this project from mid-stage design through mass-production.</h4>
+                <div class="row comparison-row">
+                    <article class="col-12 col-12-xsmall work-item">
+                        <span class="image fit"><img src="../images/proj/gen3/platformflow.png" alt="Top View" /></span>
+                        <p class="image-caption">Project Flowchart</p>
+                    </article>
+                </div>
+			</section>
+
+            <section id="Firmware">
+				<h2>Firmware (In Progress)</h2>
+                <h4>This project was transferred to me by a previous intern. 
+                    I owned this project from mid-stage design through mass-production.</h4>
+                <div class="row comparison-row">
+                    <article class="col-12 col-12-xsmall work-item">
+                        <span class="image fit"><img src="../images/proj/gen3/platformflow.png" alt="Top View" /></span>
+                        <p class="image-caption">Project Flowchart</p>
+                    </article>
+                </div>
+			</section>
+
+		</div>
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.poptrox.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
