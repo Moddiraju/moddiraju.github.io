@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<title>Custom DAQ - Manoj Oddiraju</title>
-        <link rel="icon" type="image/png" href="../images/favicon.jpg">
+        <link rel="icon" type="image/png" href="/../images/favicon.jpg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="/../assets/css/main.css" />
         <style>
             /* Reusing your custom sidebar button styles for consistency */
             ul.labeled-icons li a.sidebar-button {
@@ -64,7 +64,7 @@
 		<header id="header">
 			<div class="inner">
 				<ul class="actions stacked">
-                    <li><a href="../portfolio.html" class="button primary small icon solid fa-arrow-left">Return to Portfolio</a></li>
+                    <li><a href="/../portfolio.html" class="button primary small icon solid fa-arrow-left">Return to Portfolio</a></li>
 				</ul>
 
 				<hr />
@@ -114,7 +114,11 @@
                 </br>
                 </br>
                     The intent of this project is to develop a DAQ capable of reading 32 thermocouples simultaneously while isolating the thermocouples
-                    from the primary board to protect against any voltage spikes.
+                    into groups to protect against unintentional high-voltage contact.
+                </br>
+                </br>
+                    This project is estimated to cost between $150-200 per board (to be updated once I get a JLCPCB quote, this
+                    estimate is from a BOM cost estimation + ~$50 for soldering), while a competitive 8 thermocouple DAQ
                 </h3>
 			</section>
 
@@ -122,29 +126,29 @@
 				<h2>Hardware Layout</h2>
                 <div class="row">
                     <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="../images/proj/DAQ/daqflow.png" alt="Top View" /></span>
+                        <span class="image fit"><img src="/../images/proj/DAQ/daqflow.png" alt="Top View" /></span>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <h4>
                             The general layout of this DAQ is composed of 4 Thermocouple "banks" containing 8 thermocouples each.
-                        </br>
-                        </br>
+                            </br>
+                            </br>
                             The idea is that if an unprotected thermocouple were to come into contact with a high voltage source,
                             it would only burn out the "bank" that it was connected to, therefore saving the rest of the board.
-                        </br>
-                        </br>
+                            </br>
+                            </br>
                             Each bank has 8 thermocouples connected to an LTC2986 (with appropriate decoupling capacitors).
                             The LTC then communicates over SPI to a central STMH723 through an ISO7762 Digital Isolator. 
-                        </br>
-                        </br>
+                            </br>
+                            </br>
                             The board itself is a 4-layer board, with internal power and ground planes. The board is composed of 5 regions,
                             the 4 "banks" and a central region with all necessary hardware for the STM32. Each region maintains a 6mm "gap"
                             from all other regions to ensure that the isolators (at 1.5kV) are the limiting factor.
-                        </br>
-                        </br>
+                            </br>
+                            </br>
                             The STM Communicates with a PC over a 16-pin standard USB-C Header, which also acts as the power source for
                             the entire board when it is in operation.
-                    </h4>
+                        </h4>
                     </article>
                         
                 </div>
@@ -156,7 +160,7 @@
                     I owned this project from mid-stage design through mass-production.</h4>
                 <div class="row comparison-row">
                     <article class="col-12 col-12-xsmall work-item">
-                        <span class="image fit"><img src="../images/proj/gen3/platformflow.png" alt="Top View" /></span>
+                        <span class="image fit"><img src="/../images/proj/gen3/platformflow.png" alt="Top View" /></span>
                         <p class="image-caption">Project Flowchart</p>
                     </article>
                 </div>
@@ -164,24 +168,49 @@
 
             <section id="Firmware">
 				<h2>Firmware (In Progress)</h2>
-                <h4>This project was transferred to me by a previous intern. 
-                    I owned this project from mid-stage design through mass-production.</h4>
-                <div class="row comparison-row">
-                    <article class="col-12 col-12-xsmall work-item">
-                        <span class="image fit"><img src="../images/proj/gen3/platformflow.png" alt="Top View" /></span>
-                        <p class="image-caption">Project Flowchart</p>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/../images/proj/DAQ/firmwareflow.png" alt="Top View" /></span>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h4>
+                            The firmware for this project is actually rather simple, composed of three files.
+                            </br>
+                            </br>
+                            LTC_init contains the drivers to initialize each LTC module and establishes communication over SPI between
+                            each module and the STM32
+                            (each LTC module is connected to 2 GPIO pins on the STM32 for CS and INT, aside from the standard SPI wires).
+                            </br>
+                            </br>
+                            Instead of polling each LTC to check whether a conversion cycle is complete, the we wait for all 4 INT pins to
+                            signal completion via the use of a 4-bit mask, and then we pull temperature data from all the LTCs simultaneously.
+                            We then immediately begin the next conversion cycle and repeat the process.
+                            </br>
+                            </br>
+                            We can run the STM32 at a lower clock speed such as 120MHz so that the heat produced by the chip is minimal.
+                            Even at this speed, the bottleneck in performance will be the LTC's conversion time at around 100ms per Thermocouple.
+                            </br>
+                            </br>
+                            Once conversions are complete, the temperature data is dumped into a circular buffer which is then exported over UART
+                            to a csv (via a pyserial data logger). The STM's high speed ensures that a large buffer is unnecessary as we can select a
+                            high baud rate to ensure the buffer drains much faster than it is filled.
+                            </br>
+                            </br>
+                            The main.c file will initialize all necessary parts and contain the primary software loop ensuring the thermocouple to csv
+                            pipeline continues as long as the python file requests data.
+                        </h4>
                     </article>
                 </div>
 			</section>
 
 		</div>
 
-		<script src="../assets/js/jquery.min.js"></script>
-		<script src="../assets/js/jquery.poptrox.min.js"></script>
-		<script src="../assets/js/browser.min.js"></script>
-		<script src="../assets/js/breakpoints.min.js"></script>
-		<script src="../assets/js/util.js"></script>
-		<script src="../assets/js/main.js"></script>
+		<script src="/../assets/js/jquery.min.js"></script>
+		<script src="/../assets/js/jquery.poptrox.min.js"></script>
+		<script src="/../assets/js/browser.min.js"></script>
+		<script src="/../assets/js/breakpoints.min.js"></script>
+		<script src="/../assets/js/util.js"></script>
+		<script src="/../assets/js/main.js"></script>
 
 	</body>
 </html>

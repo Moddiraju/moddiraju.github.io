@@ -14,12 +14,19 @@
         <style>
         ul.labeled-icons li a.sidebar-button {
             display: flex;
+            justify-content: center;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
             align-items: center;
-            padding: 0.75em 1em; /* Increased padding for a better rectangle shape */
-            margin-left: -1em; 
+            padding: 1em 1.5em; /* Increased padding for a better rectangle shape */
+            margin-left: -1em;
+            margin-bottom: 1.5em;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             border-radius: 0.35em;
             border-bottom: none !important; /* Removes dotted line */
-            transition: background-color 0.2s ease;
+            transition: background-color 0.3s ease;
             width: 100%;
             text-decoration: none;
             color: #ffffff !important; /* Ensures text is white like the screenshot */
@@ -41,7 +48,7 @@
 
         /* Ensure the logo container doesn't shift */
         ul.labeled-icons li a.sidebar-button h3 {
-            margin: 0 1rem 0 0 !important;
+            margin: 0 0.75rem 0 0 !important;
             padding: 0 !important;
             position: static !important;
             width: auto !important;
@@ -51,6 +58,8 @@
             background-color: rgba(0, 0, 0, 0.4) !important;
             border-bottom: none !important;
         }
+
+        
         #main > section {
         scroll-margin-top: 15vh; 
         }
@@ -63,7 +72,10 @@
         }
 
         #header nav {
-            margin-top: 2em !important; /* Original is likely much higher or set to flex-push */
+           position: absolute;
+           top: 50%;
+           left: 5%;
+           width: 90%;
         }
 
         #header {
@@ -72,6 +84,22 @@
             justify-content: flex-start !important;
             padding-top: 3em; /* Adjust this to move the whole block up or down */
         }
+
+        #footer {
+            position: fixed;
+            bottom: 3%;
+            width:25%;
+        }
+
+        #footer .icons {
+            text-align: center;
+        }
+
+        #footer .copyright {
+            text-align: center;
+        }
+
+
         </style>
 	</head>
 	<body class="is-preload">
@@ -138,34 +166,34 @@
 						<h2>Major Projects</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="/proj/platform.html" class="image fit thumb"><img src="images/proj/gen3/pallet_top.png" alt="" /></a>
+								<a href="/proj/Base/platform.html" class="image fit thumb"><img src="images/proj/gen3/pallet_top.png" alt="" /></a>
 								<h3><strong>Gen3 Platform (Proprietary)</strong></h3>
 								<p>Custom 2-in-1 Shipping Pallet and Platform</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="/proj/DAQ.html" class="image fit thumb"><img src="images/proj/DAQ/DAQThumb.png" alt="" /></a>
+								<a href="/proj/Base/DAQ.html" class="image fit thumb"><img src="images/proj/DAQ/DAQThumb.png" alt="" /></a>
 								<h3>Custom Thermocouple DAQ (In Progress)</h3>
 								<p>32 Thermocouple in-house DAQ at a fraction of market price</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<a href="/proj/Contoro/symphony.html" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
 								<h3>Teleoperation Exoskeleton</h3>
 								<p>Teleoperation of an industrial arm via an Exoskeleton</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<a href="/proj/Contoro/conveyor.html" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Forward-reaching Conveyor System</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Remote-control smart rock crawler</h3>
-								<p>Gesture Controlled RC Car</p>
+                            <article class="col-6 col-12-xsmall work-item">
+								<a href="/proj/LHR/brakes.html" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3>Brakes System</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Bluetooth Pancake Printer</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<a href="/proj/LHR/hub.html" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3>Remote-control smart rock crawler</h3>
+								<p>Gesture Controlled RC Car</p>
 							</article>
 						</div>
 						<ul class="actions">
