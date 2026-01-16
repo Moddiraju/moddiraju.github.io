@@ -7,70 +7,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
         <style>
-            /* Container for the link acting as a button */
-        ul.labeled-icons li a.sidebar-button {
-            display: flex;
-            align-items: center;
-            padding: 0.75em 1em;
-            margin-left: -1em; 
-            border-radius: 0.35em;
-            border-bottom: none !important;
-            transition: background-color 0.2s ease;
-            width: 100%;
-            text-decoration: none;
-            color: #ffffff !important; /* Ensures text is white like the screenshot */
-        }
-        
-        ul.labeled-icons li a.sidebar-button h3.icon:before {
-            font-size: 1.5rem; /* Adjust this so the 'hat' looks proportionally correct next to the images */
-            color: #ffffff;    /* Or whatever color matches your logo theme */
-            display: block;
-        }
-        /* Fix the size of the logo image */
-        ul.labeled-icons li a.sidebar-button h3.icon img {
-            width: 2.5rem;   /* Fixed width */
-            height: 2.5rem;  /* Fixed height */
-            display: block;
-            object-fit: contain;
-            border-radius: 6px; /* Rounded corners for the logo itself */
-        }
-
-        /* Ensure the logo container doesn't shift */
-        ul.labeled-icons li a.sidebar-button h3 {
-            margin: 0 1rem 0 0 !important;
-            padding: 0 !important;
-            position: static !important;
-            width: auto !important;
-        }
-
-        ul.labeled-icons li a.sidebar-button:hover {
-            background-color: rgba(0, 0, 0, 0.4) !important;
-            border-bottom: none !important;
-        }
-        #main > section {
-        scroll-margin-top: 15vh; 
-        }
-        header.major h2 img.section-logo {
-            width: 200px;        /* Set your specific width here */
-            max-width: 100%;     /* Ensures it doesn't break on smaller screens */
-            height: auto;        /* Maintains the original aspect ratio */
-            display: block;
-            margin-bottom: 1rem; /* Adds space before the horizontal line */
-        }
-        
+            
         #header #footer {
         display: none !important;
         }
+
         </style>
 	</head>
 	<body class="is-preload">
 
 		<header id="header">
 			<div class="inner">
-				
-				<ul class="actions stacked">
-					<li><a href="index.html" class="button primary small icon solid fa-arrow-left">Return to Home</a></li>
-				</ul>
+				<nav>
+                    <ul class="labeled-icons">
+                        <li>
+                            <a href="index.html" class="sidebar-button">
+                                <h3 class="icon solid fa-arrow-left"></h3>
+                                Return to Home
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
 				<hr />
 
@@ -89,9 +46,9 @@
                             </a>
                         </li>
 						<li>
-                            <a href="#class-projects" class="sidebar-button">
+                            <a href="#longhorn-racing" class="sidebar-button">
                                 <h3 class="icon"><img src="images/logos/LHR.png" alt="LHR Logo"></h3>
-                                Longhorn Racing Electric
+                                Longhorn Racing
                             </a>
                         </li>
                         <li>
@@ -124,13 +81,13 @@
 				<div class="row">
 					<article class="col-6 col-12-xsmall work-item">
                         <a href="/proj/Base/platform.html" class="image fit thumb"><img src="images/proj/gen3/pallet_top.png" alt="" /></a>
-                        <h3><strong>Gen3 Platform (Proprietary)</strong></h3>
-                        <p>Custom 2-in-1 Shipping Pallet and Platform</p>
+                        <h3>Gen3 Platform (Proprietary)</h3>
+                        <h5>Custom 2-in-1 Shipping Pallet and Platform</h5>
                     </article>
 					<article class="col-6 col-12-xsmall work-item">
                         <a href="/proj/Base/DAQ.html" class="image fit thumb"><img src="images/proj/DAQ/DAQThumb.png" alt="" /></a>
-                        <h3><strong>Custom DAQ</strong></h3>
-                        <p>Isolated DAQ capable of reading 32 thermocouples simultaneously</p>
+                        <h3>Custom DAQ</h3>
+                        <h5>Isolated DAQ capable of reading 32 thermocouples simultaneously</h5>
                     </article>
 				</div>
 			</section>
@@ -142,13 +99,13 @@
 				<div class="row">
 					<article class="col-6 col-12-xsmall work-item">
                         <a href="/proj/platform.html" class="image fit thumb"><img src="images/proj/gen3/pallet_top.png" alt="" /></a>
-                        <h3><strong>Teleoperation Exoskeleton</strong></h3>
-                        <p>Custom 2-in-1 Shipping Pallet and Platform</p>
+                        <h3>Teleoperation Exoskeleton</h3>
+                        <h5>Custom 2-in-1 Shipping Pallet and Platform</h5>
                     </article>
 					<article class="col-6 col-12-xsmall work-item">
                         <a href="/proj/platform.html" class="image fit thumb"><img src="images/proj/gen3/pallet_top.png" alt="" /></a>
-                        <h3><strong>Forward-Reaching Conveyor System</strong></h3>
-                        <p>Custom 2-in-1 Shipping Pallet and Platform</p>
+                        <h3>Forward-Reaching Conveyor System</h3>
+                        <h5>Custom 2-in-1 Shipping Pallet and Platform</h5>
                     </article>
 				</div>
 			</section>
@@ -160,13 +117,13 @@
 				<div class="row">
 					<article class="col-6 col-12-xsmall work-item">
                         <a href="/proj/platform.html" class="image fit thumb"><img src="images/proj/gen3/pallet_top.png" alt="" /></a>
-                        <h3><strong>Wheel Hub</strong></h3>
-                        <p>Custom 2-in-1 Shipping Pallet and Platform</p>
+                        <h3>Wheel Hub</h3>
+                        <h5>Custom 2-in-1 Shipping Pallet and Platform</h5>
                     </article>
 					<article class="col-6 col-12-xsmall work-item">
                         <a href="/proj/platform.html" class="image fit thumb"><img src="images/proj/gen3/pallet_top.png" alt="" /></a>
-                        <h3><strong>Brake System</strong></h3>
-                        <p>Custom 2-in-1 Shipping Pallet and Platform</p>
+                        <h3>Brake System</h3>
+                        <h5>Custom 2-in-1 Shipping Pallet and Platform</h5>
                     </article>
 				</div>
             </section>
@@ -178,18 +135,18 @@
 				<div class="row">
 					<article class="col-6 col-12-xsmall work-item">
                         <a href="/proj/platform.html" class="image fit thumb"><img src="images/proj/gen3/pallet_top.png" alt="" /></a>
-                        <h3><strong>Senior Design</strong></h3>
-                        <p>Image to pancake 3D printer with bluetooth capabilites</p>
+                        <h3>Senior Design</h3>
+                        <h5>Image to pancake 3D printer with bluetooth capabilites</h5>
                     </article>
 					<article class="col-6 col-12-xsmall work-item">
                         <a href="/proj/platform.html" class="image fit thumb"><img src="images/proj/gen3/pallet_top.png" alt="" /></a>
-                        <h3><strong>Embedded Systems Lab</strong></h3>
-                        <p>Gesture-Controlled RC Car with Active Suspension and Rock-Crawling Abilites</p>
+                        <h3>Embedded Systems Lab</h3>
+                        <h5>Gesture-Controlled RC Car with Active Suspension and Rock-Crawling Abilites</h5>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="/proj/platform.html" class="image fit thumb"><img src="images/proj/gen3/pallet_top.png" alt="" /></a>
-                        <h3><strong>Machine Elements</strong></h3>
-                        <p>Remote Control Car with Mode-Decoupled Suspension</p>
+                        <h3>Machine Elements</h3>
+                        <h5>Remote Control Car with Mode-Decoupled Suspension</h5>
                     </article>
 				</div>
 				</div>

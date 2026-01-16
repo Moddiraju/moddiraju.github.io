@@ -3265,3 +3265,89 @@ input, select, textarea {
 			}
 
 	}
+
+    ul.labeled-icons li a.sidebar-button,
+    #header .actions.stacked li a.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    padding: 1em 1.5em;
+    margin-left: -1em;
+    margin-bottom: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 0.35em;
+    border-bottom: none !important; /* Removes the Strata template dotted line */
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff !important;
+    }
+
+    ul.labeled-icons li a.sidebar-button:hover,
+    #header .actions.stacked li a.button:hover {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        border-bottom: none !important;
+    }
+
+    /* Sidebar Icon/Logo Container */
+    ul.labeled-icons li a.sidebar-button h3 {
+        margin: 0 0.75rem 0 0 !important;
+        padding: 0 !important;
+        position: static !important;
+        width: auto !important;
+    }
+
+    /* Sidebar Icon Images (Logos) */
+    ul.labeled-icons li a.sidebar-button h3.icon img {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: block;
+        object-fit: contain;
+        border-radius: 6px;
+    }
+
+    /* Sidebar FontAwesome Icons */
+    ul.labeled-icons li a.sidebar-button h3.icon:before {
+        font-size: 1.5rem;
+        color: #ffffff;
+        display: block;
+    }
+
+    #main > section {
+        scroll-margin-top: 15vh; 
+    }
+
+
+    header.major h2 img.section-logo {
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    #header .actions.stacked {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers items horizontally */
+        justify-content: center;
+        margin-bottom: 2em;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* Ensure the button itself is centered */
+    #header .actions.stacked li {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #header .actions.stacked li a.button {
+        width: auto; /* Keeps it from stretching to 100% width */
+        margin: 0 auto;
+    }
