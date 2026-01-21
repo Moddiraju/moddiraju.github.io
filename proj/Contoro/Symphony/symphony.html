@@ -6,58 +6,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/../assets/css/main.css" />
-        <style>
-            /* Reusing your custom sidebar button styles for consistency */
-            ul.labeled-icons li a.sidebar-button {
-                display: flex;
-                align-items: center;
-                padding: 0.75em 1em;
-                margin-left: -1em; 
-                border-radius: 0.35em;
-                border-bottom: none !important;
-                transition: background-color 0.2s ease;
-                width: 100%;
-                text-decoration: none;
-                color: #ffffff !important;
-            }
-
-            ul.labeled-icons li a.sidebar-button h3 {
-                margin: 0 1rem 0 0 !important;
-                padding: 0 !important;
-                position: static !important;
-                width: auto !important;
-            }
-
-            ul.labeled-icons li a.sidebar-button:hover {
-                background-color: rgba(0, 0, 0, 0.4) !important;
-            }
-
-            #main > section {
-                scroll-margin-top: 15vh; 
-            }
-
-            .project-image-main {
-                margin-bottom: 2em;
-                border-radius: 0.35em;
-            }
-            
-            .comparison-row {
-                text-align: center;
-            }
-
-            .comparison-row .image-caption {
-                display: block;
-                margin-top: 1em;
-                font-family: "Georgia", serif; /* Matches your preferred site font */
-                font-style: italic;
-                font-size: 0.9em;
-                color: #555;
-            }
-
-            #header #footer {
-            display: none !important;
-            }
-        </style>
 	</head>
 	<body class="is-preload">
 
@@ -67,14 +15,14 @@
                     <ul class="labeled-icons">
                         <li>
                             <a href="/index.html" class="sidebar-button">
-                                <h3 class="icon solid fa-arrow-left"></h3>
-                                Return to Home
+                                <h3 class="icon solid fa-home"></h3>
+                                  Home
                             </a>
                         </li>
                         <li>
                             <a href="/portfolio.html" class="sidebar-button">
-                                <h3 class="icon solid fa-arrow-left"></h3>
-                                Return to Portfolio
+                                <h3 class="icon solid fa-images"></h3>
+                                Portfolio
                             </a>
                         </li>
                     </ul>
@@ -99,18 +47,14 @@
                                 Board
                             </a>
                         </li>
+                        <li>
+                            <a href="#Firmware" class="sidebar-button">
+                                Firmware
+                            </a>
+                        </li>
                     </ul>
                 </nav>
 			</div>
-
-			<footer id="footer">
-				<div class="inner">
-					<ul class="copyright">
-						<li>&copy; 2026 Manoj Oddiraju</li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
 		</header>
 
 		<div id="main">
@@ -173,16 +117,22 @@
 			</section>
 
             <section id="Board">
-				<h2>Board (In Progress)</h2>
-                <h4>This project was transferred to me by a previous intern. 
-                    I owned this project from mid-stage design through mass-production.</h4>
+				<h2>Board</h2>
+                <h4></h4>
                 <div class="row comparison-row">
                     <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/gen3/platformflow.png" alt="Top View" /></span>
-                        <p class="image-caption">Schematic</p>
+                        <div class="pdf-wrapper" style="border-radius: 4px; aspect-ratio: 16 / 9; overflow: hidden; line-height: 0;">
+                            <iframe 
+                                src="/../images/proj/DAQ/Board.pdf#view=FitW" 
+                                width="100%"
+                                height="100%"
+                                style="border: 0; vertical-align: middle;">
+                            </iframe>
+                        </div>
+                        <p class="image-caption" style="margin-top: 1em;">Schematic</p>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/gen3/platformflow.png" alt="Top View" /></span>
+                        <span class="image fit"><img src="/../images/proj/DAQ/Board.png" alt="Top View" /></span>
                         <p class="image-caption">PCB</p>
                     </article>
                 </div>

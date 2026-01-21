@@ -2219,29 +2219,29 @@ input, select, textarea {
 		padding: 0;
 	}
 
-		ul.labeled-icons li {
-			line-height: 1.75em;
-			margin: 1.5em 0 0 0;
-			padding-left: 2.25em;
-			position: relative;
-		}
+    ul.labeled-icons li {
+        line-height: 1.75em;
+        margin: 1.5em 0 0 0;
+        padding-left: 2.25em;
+        position: relative;
+    }
 
-			ul.labeled-icons li:first-child {
-				margin-top: 0;
-			}
+    ul.labeled-icons li:first-child {
+        margin-top: 0;
+    }
 
-			ul.labeled-icons li a {
-				color: inherit;
-			}
+    ul.labeled-icons li a {
+        color: inherit;
+    }
 
-			ul.labeled-icons li h3 {
-				color: #b2b2b2;
-				left: 0;
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: 1em;
-			}
+    ul.labeled-icons li h3 {
+        color: #b2b2b2;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 1em;
+    }
 
 /* Actions */
 
@@ -3311,7 +3311,11 @@ input, select, textarea {
 
     /* Sidebar FontAwesome Icons */
     ul.labeled-icons li a.sidebar-button h3.icon:before {
-        font-size: 1.5rem;
+        left: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        font-size: 1.25rem;
         color: #ffffff;
         display: block;
     }
@@ -3350,4 +3354,14 @@ input, select, textarea {
     #header .actions.stacked li a.button {
         width: auto; /* Keeps it from stretching to 100% width */
         margin: 0 auto;
+    }
+
+    .comparison-row .image-caption {
+        text-align: center;
+        display: block;
+        margin-top: 1em;
+        font-family: "Georgia", serif; /* Matches your preferred site font */
+        font-style: italic;
+        font-size: 0.9em;
+        color: #555;
     }

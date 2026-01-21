@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Custom DAQ - Manoj Oddiraju</title>
+        <link rel="icon" type="image/png" href="/../images/favicon.jpg">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<header id="header">
+			<div class="inner">
+				<nav>
+                    <ul class="labeled-icons">
+                        <li>
+                            <a href="/index.html" class="sidebar-button">
+                                <h3 class="icon solid fa-home"></h3>
+                                  Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/portfolio.html" class="sidebar-button">
+                                <h3 class="icon solid fa-images"></h3>
+                                Portfolio
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+				<hr />
+
+                <nav>
+                    <ul class="labeled-icons">
+                        <li>
+                            <a href="#overview" class="sidebar-button">
+                                Overview
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Layout" class="sidebar-button">
+                                Hardware Layout
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Board" class="sidebar-button">
+                                Board
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Firmware" class="sidebar-button">
+                                Firmware
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+			</div>
+		</header>
+
+		<div id="main">
+
+			<section id="overview">
+				<header class="major">
+					<h2>Custom DAQ (In Progress)</h2>
+                    <h3>Isolated DAQ capable of reading 32 thermocouples simultaneously</h3>
+				</header>
+                <h4>This project was handed to me to continue outside of Base Power (and eventually share the final product with them).
+                    I am developing firmware, which I intend on testing once I get a board in hand. I'll be very happy to discuss details
+                    about this project in any interview!
+                </br>
+                </br>
+                    The intent of this project is to develop a DAQ capable of reading 32 thermocouples simultaneously while isolating the thermocouples
+                    into groups to protect against unintentional high-voltage contact.
+                </br>
+                </br>
+                    This project is estimated to cost between $150-200 per board (to be updated once I get a JLCPCB quote, this
+                    estimate is from a BOM cost estimation + ~$50 for soldering), while 
+                    <a href="https://www.dwyeromega.com/en-us/8-channel-handheld-thermocouple-thermometer-data-logger/OM-HL-EH-TC-Series/p/OM-HL-EH-TC?srsltid=AfmBOoovJQG_qCzFhH0RC50ZPm0-6h2RSRUvJMgB3i6yJqJxjOZE3HKJYdg">
+                        the cheapest thermocouple DAQ
+                    </a> I could find
+                    is approximately ~$475, and that too for an 8-channel logger with a 24 hour logging rate at 1 sample per second at most.
+
+                </h4>
+			</section>
+
+			<section id="Layout">
+				<h2>Hardware Layout</h2>
+                <div class="row comparison-row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="Images/daqflow.png" alt="Top View" /></span>
+                        <p class="image-caption" style="margin-top: 1em;">Hardware Flowchart</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h4>
+                            The general layout of this DAQ is composed of 4 Thermocouple "banks" containing 8 thermocouples each.
+                            </br>
+                            </br>
+                            The idea is that if an unprotected thermocouple were to come into contact with a high voltage source,
+                            it would only burn out the "bank" that it was connected to, therefore saving the rest of the board.
+                            </br>
+                            </br>
+                            Each bank has 8 thermocouples connected to an LTC2986 (with appropriate decoupling capacitors).
+                            The LTC then communicates over SPI to a central STMH723 through an ISO7762 Digital Isolator. 
+                            </br>
+                            </br>
+                            The board itself is a 4-layer board, with internal power and ground planes. The board is composed of 5 regions,
+                            the 4 "banks" and a central region with all necessary hardware for the STM32. Each region maintains a 6mm "gap"
+                            from all other regions to ensure that the isolators (at 1.5kV) are the limiting factor.
+                            </br>
+                            </br>
+                            The STM Communicates with a PC over a 16-pin standard USB-C Header, which also acts as the power source for
+                            the entire board when it is in operation.
+                        </h4>
+                    </article>
+                        
+                </div>
+			</section>
+
+            <section id="Board">
+				<h2>Board</h2>
+                <h4></h4>
+                <div class="row comparison-row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <div class="pdf-wrapper" style="border-radius: 4px; aspect-ratio: 16 / 9; overflow: hidden; line-height: 0;">
+                            <iframe 
+                                src="Images/Board.pdf#view=FitW" 
+                                width="100%"
+                                height="100%"
+                                style="border: 0; vertical-align: middle;">
+                            </iframe>
+                        </div>
+                        <p class="image-caption" style="margin-top: 1em;">Schematic</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="Images/Board.png" alt="Top View" /></span>
+                        <p class="image-caption">PCB</p>
+                    </article>
+                </div>
+			</section>
+
+            <section id="Firmware">
+				<h2>Firmware (In Progress)</h2>
+                <div class="row comparison-row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="Images/firmwareflow.png" alt="Top View" /></span>
+                        <p class="image-caption" style="margin-top: 1em;">Firmware Flowchart</p>
+                    </article>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h4>
+                            The firmware for this project is actually rather simple, composed of three files.
+                            </br>
+                            </br>
+                            LTC_init contains the drivers to initialize each LTC module and establishes communication over SPI between
+                            each module and the STM32
+                            (each LTC module is connected to 2 GPIO pins on the STM32 for CS and INT, aside from the standard SPI wires).
+                            </br>
+                            </br>
+                            Instead of polling each LTC to check whether a conversion cycle is complete, the we wait for all 4 INT pins to
+                            signal completion via the use of a 4-bit mask, and then we pull temperature data from all the LTCs simultaneously.
+                            We then immediately begin the next conversion cycle and repeat the process.
+                            </br>
+                            </br>
+                            We can run the STM32 at a lower clock speed such as 120MHz so that the heat produced by the chip is minimal.
+                            Even at this speed, the bottleneck in performance will be the LTC's conversion time at around 100ms per Thermocouple.
+                            </br>
+                            </br>
+                            Once conversions are complete, the temperature data is dumped into a circular buffer which is then exported over UART
+                            to a csv (via a pyserial data logger). The STM's high speed ensures that a large buffer is unnecessary as we can select a
+                            high baud rate to ensure the buffer drains much faster than it is filled.
+                            </br>
+                            </br>
+                            The main.c file will initialize all necessary parts and contain the primary software loop ensuring the thermocouple to csv
+                            pipeline continues as long as the python file requests data.
+                        </h4>
+                    </article>
+                </div>
+			</section>
+
+		</div>
+
+		<script src="/../assets/js/jquery.min.js"></script>
+		<script src="/../assets/js/jquery.poptrox.min.js"></script>
+		<script src="/../assets/js/browser.min.js"></script>
+		<script src="/../assets/js/breakpoints.min.js"></script>
+		<script src="/../assets/js/util.js"></script>
+		<script src="/../assets/js/main.js"></script>
+
+	</body>
+</html>
