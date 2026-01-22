@@ -1,71 +1,32 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Gen3 Platform - Manoj Oddiraju</title>
+		<title>Exoskeleton - Manoj Oddiraju</title>
         <link rel="icon" type="image/png" href="/../images/favicon.jpg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/../assets/css/main.css" />
-        <style>
-            /* Reusing your custom sidebar button styles for consistency */
-            ul.labeled-icons li a.sidebar-button {
-                display: flex;
-                align-items: center;
-                padding: 0.75em 1em;
-                margin-left: -1em; 
-                border-radius: 0.35em;
-                border-bottom: none !important;
-                transition: background-color 0.2s ease;
-                width: 100%;
-                text-decoration: none;
-                color: #ffffff !important;
-            }
-
-            ul.labeled-icons li a.sidebar-button h3 {
-                margin: 0 1rem 0 0 !important;
-                padding: 0 !important;
-                position: static !important;
-                width: auto !important;
-            }
-
-            ul.labeled-icons li a.sidebar-button:hover {
-                background-color: rgba(0, 0, 0, 0.4) !important;
-            }
-
-            #main > section {
-                scroll-margin-top: 15vh; 
-            }
-
-            .project-image-main {
-                margin-bottom: 2em;
-                border-radius: 0.35em;
-            }
-            
-            .comparison-row {
-                text-align: center;
-            }
-
-            .comparison-row .image-caption {
-                display: block;
-                margin-top: 1em;
-                font-family: "Georgia", serif; /* Matches your preferred site font */
-                font-style: italic;
-                font-size: 0.9em;
-                color: #555;
-            }
-
-            #header #footer {
-            display: none !important;
-            }
-        </style>
 	</head>
 	<body class="is-preload">
 
 		<header id="header">
 			<div class="inner">
-				<ul class="actions stacked">
-                    <li><a href="../../../portfolio.html" class="button primary small icon solid fa-arrow-left">Return to Portfolio</a></li>
-				</ul>
+				<nav>
+                    <ul class="labeled-icons">
+                        <li>
+                            <a href="/index.html" class="sidebar-button">
+                                <h3 class="icon solid fa-home"></h3>
+                                  Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/portfolio.html" class="sidebar-button">
+                                <h3 class="icon solid fa-images"></h3>
+                                Portfolio
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
 				<hr />
 
@@ -77,98 +38,122 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#design" class="sidebar-button">
-                                Design
+                            <a href="#Mech" class="sidebar-button">
+                                Mechanical Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Controls" class="sidebar-button">
+                                Controls
                             </a>
                         </li>
                     </ul>
                 </nav>
 			</div>
-
-			<footer id="footer">
-				<div class="inner">
-					<ul class="copyright">
-						<li>&copy; 2026 Manoj Oddiraju</li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
 		</header>
 
 		<div id="main">
 
 			<section id="overview">
 				<header class="major">
-					<h2>Gen3 Platform (Proprietary)</h2>
-                    <p>Proprietary Custom 2-in-1 Shipping Pallet and Platform</p>
+					<h2>Teleoperation Exoskeleton (Proprietary)</h2>
+                    <h3>
+                        This project acted as a remote controller for a larger, industrial arm that unloaded containers.
+                    </br>
+                    </br>    
+                        As this work is proprietary, I cannot disclose significant information or project specifics.
+                    </h3>
 				</header>
-                <div class="row comparison-row">
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/gen3/pallet_top.png" alt="Top View" /></span>
-                        <p class="image-caption">Isometric View: Install Configuration</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/gen3/pallet_down.png" alt="Bottom View" /></span>
-                        <p class="image-caption">Isometric View: Factory Configuration</p>
-                    </article>
-                </div>
-                <h3>This injection molded product serves as both a platform during installation 
-                    and as a pallet for warehouse logistics. The product is proprietary so all images are blurred
-                    and product details are kept minimal.
-                </h3>
 			</section>
 
-			<section id="design">
-				<h2>Design</h2>
-                <h4>This project was transferred to me by a previous intern. 
-                    I owned this project from mid-stage design through mass-production.</h4>
+			<section id="Overview">
+				<h2>Overview</h2>
                 <div class="row comparison-row">
-                    <article class="col-12 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/gen3/platformflow.png" alt="Top View" /></span>
-                        <p class="image-caption">Project Flowchart</p>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Carpalold.png" alt="Top View" /></span>
+                        <p class="image-caption">Carpal Joint Iteration 1</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Carpalnew.png" alt="Top View" /></span>
+                        <p class="image-caption">Carpal Joint Iteration 2</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                    </article>
+                        
+                </div>
+			</section>
+
+            <section id="Mech">
+				<h2>Mechanical Design</h2>
+                <h4></h4>
+                <div class="row comparison-row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Human.png" alt="Top View" /></span>
+                        <p class="image-caption">The 7 Degrees-of-Freedom of a Human Arm</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h4>
+                            The exoskeleton was designed with the intention of translating a human arm's 7 Degrees-of-Freedom
+                            into a standard industrial arm's 6 Degrees-of-Freedom. The primary industrial arm was
+                        </br>
+                        </br>
+                            The industrial arm was primarily autonomous, unloading boxes from containers using computer vision, the goal
+                            of this project was to assist the arm in edge cases where the industrial arm would fail to understand its
+                            environment.
+                        </br>
+                        </br>
+                            Due to the nature of the arm and end-effector, the pronation/supination rotational axes of the wrist were
+                            replaced with a joystick that controlled the end-effector.
+                        </h4>
                     </article>
                 </div>
-				
-				<div class="row">
-					<article class="col-6 col-12-xsmall work-item">
-						<h3>Design choices</h3>
-						<ul>
-                            <li>
-                                Injection Molding chosen for ease of ramp to mass-production
-                            </li>
-                            <li>
-                                Material selection based on meeting specific UL standards
-                            </li>
-                            <li>
-                                Worst-case tolerance stack-up used to ensure functionality while minimizing
-                                manufacturing complexity/part price
-                            </li>
-                            <li>
-                                Factory-friendly design allows smooth warehouse logistics
-                            </li>
-                        </ul>
-					</article>
-					<article class="col-6 col-12-xsmall work-item">
-                        <h3>
-                            While I cannot disclose much more about this product, I owned all aspects of mechanical design
-                            (including drawings) to take this product from mid-stage design, through protypes, and to mass-production.
-                        </br>
-                        </br>
-                            Therefore I am well-versed in high-volume manufacturing processes such as CNC, Injection Molding, and 
-                            ramped assembly.
-                        </h3>
-					</article>
-				</div>
+			</section>
+
+            <section id="Controls">
+				<h2>Controls (Shelved)</h2>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/../images/proj/DAQ/firmwareflow.png" alt="Top View" /></span>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h4>
+                            The controls for this project were shelved before being tested, however I was able to learn about 
+                            Forward Kinematics and Inverse Kinematics while developing an exoskeleton-to-industrial-arm mapping
+                            algorithm
+                            </br>
+                            </br>
+                            Each Degree-of-Freedom of the exoskeleton has an incremental and absolute encoder mounted, to keep track of rotational motion.
+                            The arm "lengths" (i.e. the distances between the rotational joints) are not adjustable besides the shoulder to elbow length.
+                            </br>
+                            </br>
+                            Knowing both the mechanical dimensions and the angles of rotation at all six joints, you can develop a series of 
+                            transformational matrices for pose.
+                            </br>
+                            </br>
+                            We can run the STM32 at a lower clock speed such as 120MHz so that the heat produced by the chip is minimal.
+                            Even at this speed, the bottleneck in performance will be the LTC's conversion time at around 100ms per Thermocouple.
+                            </br>
+                            </br>
+                            Once conversions are complete, the temperature data is dumped into a circular buffer which is then exported over UART
+                            to a csv (via a pyserial data logger). The STM's high speed ensures that a large buffer is unnecessary as we can select a
+                            high baud rate to ensure the buffer drains much faster than it is filled.
+                            </br>
+                            </br>
+                            The main.c file will initialize all necessary parts and contain the primary software loop ensuring the thermocouple to csv
+                            pipeline continues as long as the python file requests data.
+                        </h4>
+                    </article>
+                </div>
 			</section>
 
 		</div>
 
-		<script src="../../assets/js/jquery.min.js"></script>
-		<script src="../../assets/js/jquery.poptrox.min.js"></script>
-		<script src="../../assets/js/browser.min.js"></script>
-		<script src="../../assets/js/breakpoints.min.js"></script>
-		<script src="../../assets/js/util.js"></script>
-		<script src="../../assets/js/main.js"></script>
+		<script src="/../assets/js/jquery.min.js"></script>
+		<script src="/../assets/js/jquery.poptrox.min.js"></script>
+		<script src="/../assets/js/browser.min.js"></script>
+		<script src="/../assets/js/breakpoints.min.js"></script>
+		<script src="/../assets/js/util.js"></script>
+		<script src="/../assets/js/main.js"></script>
 
 	</body>
 </html>
