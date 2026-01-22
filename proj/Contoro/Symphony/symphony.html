@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Custom DAQ - Manoj Oddiraju</title>
+		<title>Exoskeleton - Manoj Oddiraju</title>
         <link rel="icon" type="image/png" href="/../images/favicon.jpg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -38,18 +38,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#Layout" class="sidebar-button">
-                                Hardware Layout
+                            <a href="#Mech" class="sidebar-button">
+                                Mechanical Design
                             </a>
                         </li>
                         <li>
-                            <a href="#Board" class="sidebar-button">
-                                Board
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Firmware" class="sidebar-button">
-                                Firmware
+                            <a href="#Controls" class="sidebar-button">
+                                Controls
                             </a>
                         </li>
                     </ul>
@@ -61,102 +56,78 @@
 
 			<section id="overview">
 				<header class="major">
-					<h2>Custom DAQ (In Progress)</h2>
-                    <h3>Isolated DAQ capable of reading 32 thermocouples simultaneously</h3>
+					<h2>Teleoperation Exoskeleton (Proprietary)</h2>
+                    <h3>
+                        This project acted as a remote controller for a larger, industrial arm that unloaded containers.
+                    </br>
+                    </br>    
+                        As this work is proprietary, I cannot disclose significant information or project specifics.
+                    </h3>
 				</header>
-                <h4>This project was handed to me to continue outside of Base Power (and eventually share the final product with them).
-                    The schematic is currently finished, and I intend on finishing the board soon. I am developing firmware in parallel,
-                    which I intend on testing once I get a board in hand. I'll be very happy to discuss details
-                    about this project in any interview!
-                </br>
-                </br>
-                    The intent of this project is to develop a DAQ capable of reading 32 thermocouples simultaneously while isolating the thermocouples
-                    into groups to protect against unintentional high-voltage contact.
-                </br>
-                </br>
-                    This project is estimated to cost between $150-200 per board (to be updated once I get a JLCPCB quote, this
-                    estimate is from a BOM cost estimation + ~$50 for soldering), while 
-                    <a href="https://www.dwyeromega.com/en-us/8-channel-handheld-thermocouple-thermometer-data-logger/OM-HL-EH-TC-Series/p/OM-HL-EH-TC?srsltid=AfmBOoovJQG_qCzFhH0RC50ZPm0-6h2RSRUvJMgB3i6yJqJxjOZE3HKJYdg">
-                        the cheapest thermocouple DAQ
-                    </a> I could find
-                    is approximately ~$475, and that too for an 8-channel logger with a 24 hour logging rate at 1 sample per second at most.
-
-                </h4>
 			</section>
 
-			<section id="Layout">
-				<h2>Hardware Layout</h2>
-                <div class="row">
+			<section id="Overview">
+				<h2>Overview</h2>
+                <div class="row comparison-row">
                     <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/DAQ/daqflow.png" alt="Top View" /></span>
+                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Carpalold.png" alt="Top View" /></span>
+                        <p class="image-caption">Carpal Joint Iteration 1</p>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <h4>
-                            The general layout of this DAQ is composed of 4 Thermocouple "banks" containing 8 thermocouples each.
-                            </br>
-                            </br>
-                            The idea is that if an unprotected thermocouple were to come into contact with a high voltage source,
-                            it would only burn out the "bank" that it was connected to, therefore saving the rest of the board.
-                            </br>
-                            </br>
-                            Each bank has 8 thermocouples connected to an LTC2986 (with appropriate decoupling capacitors).
-                            The LTC then communicates over SPI to a central STMH723 through an ISO7762 Digital Isolator. 
-                            </br>
-                            </br>
-                            The board itself is a 4-layer board, with internal power and ground planes. The board is composed of 5 regions,
-                            the 4 "banks" and a central region with all necessary hardware for the STM32. Each region maintains a 6mm "gap"
-                            from all other regions to ensure that the isolators (at 1.5kV) are the limiting factor.
-                            </br>
-                            </br>
-                            The STM Communicates with a PC over a 16-pin standard USB-C Header, which also acts as the power source for
-                            the entire board when it is in operation.
-                        </h4>
+                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Carpalnew.png" alt="Top View" /></span>
+                        <p class="image-caption">Carpal Joint Iteration 2</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
                     </article>
                         
                 </div>
 			</section>
 
-            <section id="Board">
-				<h2>Board</h2>
+            <section id="Mech">
+				<h2>Mechanical Design</h2>
                 <h4></h4>
                 <div class="row comparison-row">
                     <article class="col-6 col-12-xsmall work-item">
-                        <div class="pdf-wrapper" style="border-radius: 4px; aspect-ratio: 16 / 9; overflow: hidden; line-height: 0;">
-                            <iframe 
-                                src="/../images/proj/DAQ/Board.pdf#view=FitW" 
-                                width="100%"
-                                height="100%"
-                                style="border: 0; vertical-align: middle;">
-                            </iframe>
-                        </div>
-                        <p class="image-caption" style="margin-top: 1em;">Schematic</p>
+                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Human.png" alt="Top View" /></span>
+                        <p class="image-caption">The 7 Degrees-of-Freedom of a Human Arm</p>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/DAQ/Board.png" alt="Top View" /></span>
-                        <p class="image-caption">PCB</p>
+                        <h4>
+                            The exoskeleton was designed with the intention of translating a human arm's 7 Degrees-of-Freedom
+                            into a standard industrial arm's 6 Degrees-of-Freedom. The primary industrial arm was
+                        </br>
+                        </br>
+                            The industrial arm was primarily autonomous, unloading boxes from containers using computer vision, the goal
+                            of this project was to assist the arm in edge cases where the industrial arm would fail to understand its
+                            environment.
+                        </br>
+                        </br>
+                            Due to the nature of the arm and end-effector, the pronation/supination rotational axes of the wrist were
+                            replaced with a joystick that controlled the end-effector.
+                        </h4>
                     </article>
                 </div>
 			</section>
 
-            <section id="Firmware">
-				<h2>Firmware (In Progress)</h2>
+            <section id="Controls">
+				<h2>Controls (Shelved)</h2>
                 <div class="row">
                     <article class="col-6 col-12-xsmall work-item">
                         <span class="image fit"><img src="/../images/proj/DAQ/firmwareflow.png" alt="Top View" /></span>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <h4>
-                            The firmware for this project is actually rather simple, composed of three files.
+                            The controls for this project were shelved before being tested, however I was able to learn about 
+                            Forward Kinematics and Inverse Kinematics while developing an exoskeleton-to-industrial-arm mapping
+                            algorithm
                             </br>
                             </br>
-                            LTC_init contains the drivers to initialize each LTC module and establishes communication over SPI between
-                            each module and the STM32
-                            (each LTC module is connected to 2 GPIO pins on the STM32 for CS and INT, aside from the standard SPI wires).
+                            Each Degree-of-Freedom of the exoskeleton has an incremental and absolute encoder mounted, to keep track of rotational motion.
+                            The arm "lengths" (i.e. the distances between the rotational joints) are not adjustable besides the shoulder to elbow length.
                             </br>
                             </br>
-                            Instead of polling each LTC to check whether a conversion cycle is complete, the we wait for all 4 INT pins to
-                            signal completion via the use of a 4-bit mask, and then we pull temperature data from all the LTCs simultaneously.
-                            We then immediately begin the next conversion cycle and repeat the process.
+                            Knowing both the mechanical dimensions and the angles of rotation at all six joints, you can develop a series of 
+                            transformational matrices for pose.
                             </br>
                             </br>
                             We can run the STM32 at a lower clock speed such as 120MHz so that the heat produced by the chip is minimal.
