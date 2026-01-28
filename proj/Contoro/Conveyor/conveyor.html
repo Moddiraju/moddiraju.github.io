@@ -1,71 +1,32 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Gen3 Platform - Manoj Oddiraju</title>
+		<title>Conveyor - Manoj Oddiraju</title>
         <link rel="icon" type="image/png" href="/../images/favicon.jpg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/../assets/css/main.css" />
-        <style>
-            /* Reusing your custom sidebar button styles for consistency */
-            ul.labeled-icons li a.sidebar-button {
-                display: flex;
-                align-items: center;
-                padding: 0.75em 1em;
-                margin-left: -1em; 
-                border-radius: 0.35em;
-                border-bottom: none !important;
-                transition: background-color 0.2s ease;
-                width: 100%;
-                text-decoration: none;
-                color: #ffffff !important;
-            }
-
-            ul.labeled-icons li a.sidebar-button h3 {
-                margin: 0 1rem 0 0 !important;
-                padding: 0 !important;
-                position: static !important;
-                width: auto !important;
-            }
-
-            ul.labeled-icons li a.sidebar-button:hover {
-                background-color: rgba(0, 0, 0, 0.4) !important;
-            }
-
-            #main > section {
-                scroll-margin-top: 15vh; 
-            }
-
-            .project-image-main {
-                margin-bottom: 2em;
-                border-radius: 0.35em;
-            }
-            
-            .comparison-row {
-                text-align: center;
-            }
-
-            .comparison-row .image-caption {
-                display: block;
-                margin-top: 1em;
-                font-family: "Georgia", serif; /* Matches your preferred site font */
-                font-style: italic;
-                font-size: 0.9em;
-                color: #555;
-            }
-
-            #header #footer {
-            display: none !important;
-            }
-        </style>
 	</head>
 	<body class="is-preload">
 
 		<header id="header">
 			<div class="inner">
-				<ul class="actions stacked">
-                    <li><a href="../../../portfolio.html" class="button primary small icon solid fa-arrow-left">Return to Portfolio</a></li>
-				</ul>
+				<nav>
+                    <ul class="labeled-icons">
+                        <li>
+                            <a href="/index.html" class="sidebar-button">
+                                <h3 class="icon solid fa-home"></h3>
+                                  Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/portfolio.html" class="sidebar-button">
+                                <h3 class="icon solid fa-images"></h3>
+                                Portfolio
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
 				<hr />
 
@@ -77,98 +38,78 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#design" class="sidebar-button">
+                            <a href="#Mech" class="sidebar-button">
                                 Design
                             </a>
-                        </li>
+                        </li> 
                     </ul>
                 </nav>
 			</div>
-
-			<footer id="footer">
-				<div class="inner">
-					<ul class="copyright">
-						<li>&copy; 2026 Manoj Oddiraju</li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
 		</header>
 
 		<div id="main">
 
 			<section id="overview">
 				<header class="major">
-					<h2>Gen3 Platform (Proprietary)</h2>
-                    <p>Proprietary Custom 2-in-1 Shipping Pallet and Platform</p>
+					<h2>Chassis-Mounted Conveyor (Proprietary)</h2>
+                    <p>
+                        Chassis-Mounted Conveyor to improve unloading reliability
+                    </p>
 				</header>
                 <div class="row comparison-row">
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/gen3/pallet_top.png" alt="Top View" /></span>
-                        <p class="image-caption">Isometric View: Install Configuration</p>
+                    <article class="col-12 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/proj/Contoro/Conveyor/Images/Iter2.png" alt="Top View" /></span>
+                        <p class="image-caption">Conveyor Iteration Two (no unloading failures during lifespan)</p>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/gen3/pallet_down.png" alt="Bottom View" /></span>
-                        <p class="image-caption">Isometric View: Factory Configuration</p>
                     </article>
+                        
                 </div>
-                <h3>This injection molded product serves as both a platform during installation 
-                    and as a pallet for warehouse logistics. The product is proprietary so all images are blurred
-                    and product details are kept minimal.
-                </h3>
 			</section>
 
-			<section id="design">
+            <section id="Mech">
 				<h2>Design</h2>
-                <h4>This project was transferred to me by a previous intern. 
-                    I owned this project from mid-stage design through mass-production.</h4>
+                <h4></h4>
                 <div class="row comparison-row">
-                    <article class="col-12 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/gen3/platformflow.png" alt="Top View" /></span>
-                        <p class="image-caption">Project Flowchart</p>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/proj/Contoro/Conveyor/Images/Iter1.png" alt="Top View" /></span>
+                        <p class="image-caption">First Conveyor with an Acrylic Base-Plate</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h4>
+                            This project went through two iterations. The first iteration is shown one the left, with a 1/4"
+                            Acrylic Base Plate and 80/20 Bars running lengthwise. The conveyor cantilevers over the front of the robot
+                            chassis to cover a "dead-spot" in the robot's reach.
+                        </br>
+                        </br>
+                            The rollers were mounted to the base-plate with 5052-H32 mounts. This immediately presented an issue as the
+                            the base plate warped when the retaining nuts for the rollers were being installed with a relatively large
+                            torque-spec of 70 N-m.
+
+                        </br>
+                        </br>
+                            This design also proved to not be stiff enough in testing as customer boxes were heavier than anticipated. As this
+                            was an important assembly, it was decided to opt for a more expensive, but permanent solution.
+                        </br>
+                        </br>
+                            The second iteration was composed of a two-part 5052-H32 base plate that integrated the roller mounts. This
+                            was supported underneath by custom 5mm thick mild-steel U-bars to improve flexural rigidity. Additionally,
+                            to ensure that unloaded boxes followed the "S" shape (away from the container wall), a sunken roller was added to
+                            divert any off-course boxes. As the conveyor needed to be detached from the chassis regularly to access the
+                            internal wiring of the robot, handles were added on each end to easily dismount the conveyor from the main chassis.
+                        </h4>
                     </article>
                 </div>
-				
-				<div class="row">
-					<article class="col-6 col-12-xsmall work-item">
-						<h3>Design choices</h3>
-						<ul>
-                            <li>
-                                Injection Molding chosen for ease of ramp to mass-production
-                            </li>
-                            <li>
-                                Material selection based on meeting specific UL standards
-                            </li>
-                            <li>
-                                Worst-case tolerance stack-up used to ensure functionality while minimizing
-                                manufacturing complexity/part price
-                            </li>
-                            <li>
-                                Factory-friendly design allows smooth warehouse logistics
-                            </li>
-                        </ul>
-					</article>
-					<article class="col-6 col-12-xsmall work-item">
-                        <h3>
-                            While I cannot disclose much more about this product, I owned all aspects of mechanical design
-                            (including drawings) to take this product from mid-stage design, through protypes, and to mass-production.
-                        </br>
-                        </br>
-                            Therefore I am well-versed in high-volume manufacturing processes such as CNC, Injection Molding, and 
-                            ramped assembly.
-                        </h3>
-					</article>
-				</div>
 			</section>
 
 		</div>
 
-		<script src="../../assets/js/jquery.min.js"></script>
-		<script src="../../assets/js/jquery.poptrox.min.js"></script>
-		<script src="../../assets/js/browser.min.js"></script>
-		<script src="../../assets/js/breakpoints.min.js"></script>
-		<script src="../../assets/js/util.js"></script>
-		<script src="../../assets/js/main.js"></script>
+		<script src="/../assets/js/jquery.min.js"></script>
+		<script src="/../assets/js/jquery.poptrox.min.js"></script>
+		<script src="/../assets/js/browser.min.js"></script>
+		<script src="/../assets/js/breakpoints.min.js"></script>
+		<script src="/../assets/js/util.js"></script>
+		<script src="/../assets/js/main.js"></script>
 
 	</body>
 </html>

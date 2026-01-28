@@ -1,0 +1,1351 @@
+{
+    "asset": {
+        "generator": "SOLIDWORKSGLTF",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "name": "Front Assembly",
+            "nodes": [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "matrix": [
+                0.6464091309827765,
+                -0.6996378782141464,
+                0.304404459149499,
+                0.0,
+                -0.11600298122250367,
+                0.30420612947845266,
+                0.9455167577231143,
+                0.0,
+                -0.7541210405031696,
+                -0.6465024904482164,
+                0.11548154014677273,
+                0.0,
+                -0.7503104527841529,
+                -1.2463188666218814,
+                0.317758890313065,
+                1.0
+            ],
+            "camera": 0,
+            "name": "current camera"
+        },
+        {
+            "children": [
+                2,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18
+            ],
+            "name": "_24-DYN-2100-R1 (Hub Assembly)"
+        },
+        {
+            "rotation": [
+                -0.011780699715018272,
+                -6.068164920440275e-19,
+                -7.144578670470709e-19,
+                0.9999306201934814
+            ],
+            "scale": [
+                1.0,
+                0.9999999403953552,
+                0.9999999403953552
+            ],
+            "translation": [
+                -1.2428790713386942e-17,
+                -0.5957933068275452,
+                0.202907994389534
+            ],
+            "children": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ],
+            "name": "_24-DYN-2101-R1 (Front Brake Rotor Assembly)"
+        },
+        {
+            "mesh": 0,
+            "name": "24-DYN-2100-06-R1 (Front Brake Rotor)-1"
+        },
+        {
+            "rotation": [
+                -5.80978562915841e-22,
+                0.8195146322250366,
+                0.0,
+                -0.5730582475662231
+            ],
+            "translation": [
+                -0.03464101627469063,
+                0.0020000040531158447,
+                -0.019999999552965164
+            ],
+            "mesh": 1,
+            "name": "24-PTN-3100-08-R1 (Universal Brake Button)-1"
+        },
+        {
+            "rotation": [
+                -5.975753380810262e-22,
+                0.9060403108596802,
+                1.2793911253684614e-21,
+                0.4231913983821869
+            ],
+            "translation": [
+                0.03464101627469063,
+                0.0020000040531158447,
+                -0.019999999552965164
+            ],
+            "mesh": 1,
+            "name": "24-PTN-3100-08-R1 (Universal Brake Button)-3"
+        },
+        {
+            "rotation": [
+                0.0,
+                0.5730582475662231,
+                -1.0589657191771241e-18,
+                0.8195146322250366
+            ],
+            "translation": [
+                0.03464101627469063,
+                0.0020000040531158447,
+                0.019999999552965164
+            ],
+            "mesh": 1,
+            "name": "24-PTN-3100-08-R1 (Universal Brake Button)-4"
+        },
+        {
+            "rotation": [
+                4.3201381571657186e-19,
+                0.9962496161460876,
+                -3.799193701429173e-20,
+                -0.08652561157941818
+            ],
+            "translation": [
+                2.393918396847994e-16,
+                0.0020000040531158447,
+                -0.03999999910593033
+            ],
+            "mesh": 1,
+            "name": "24-PTN-3100-08-R1 (Universal Brake Button)-2"
+        },
+        {
+            "rotation": [
+                -1.22927712708805e-21,
+                -0.4231913983821869,
+                -5.741682068142104e-22,
+                0.9060403108596802
+            ],
+            "translation": [
+                -0.03464101627469063,
+                0.0020000040531158447,
+                0.019999999552965164
+            ],
+            "mesh": 1,
+            "name": "24-PTN-3100-08-R1 (Universal Brake Button)-6"
+        },
+        {
+            "rotation": [
+                4.6743055530705275e-22,
+                0.08652561157941818,
+                -4.059696574965892e-23,
+                0.9962496161460876
+            ],
+            "translation": [
+                -5.169475958410885e-16,
+                0.0020000040531158447,
+                0.03999999910593033
+            ],
+            "mesh": 1,
+            "name": "24-PTN-3100-08-R1 (Universal Brake Button)-5"
+        },
+        {
+            "mesh": 2,
+            "name": "24-DYN-2100-01-R1 (Front Wheel Hub)-1"
+        },
+        {
+            "rotation": [
+                0.00219252472743392,
+                0.018851106986403465,
+                0.7068554759025574,
+                0.707103431224823
+            ],
+            "scale": [
+                0.9999999403953552,
+                0.9999999403953552,
+                1.0
+            ],
+            "translation": [
+                -1.2251338965298391e-17,
+                -0.5372845530509949,
+                0.20152916014194489
+            ],
+            "mesh": 3,
+            "name": "24-DYN-2100-04-R1 (Front Hub Nut)-1"
+        },
+        {
+            "rotation": [
+                -0.7068554759025574,
+                0.707103431224823,
+                0.00219252472743392,
+                -0.018851106986403465
+            ],
+            "scale": [
+                0.9999999403953552,
+                0.9999999403953552,
+                1.0
+            ],
+            "translation": [
+                -0.02175735868513584,
+                -0.5404434204101563,
+                0.20225155353546143
+            ],
+            "mesh": 4,
+            "name": "DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-4"
+        },
+        {
+            "rotation": [
+                -0.7068554759025574,
+                0.707103431224823,
+                0.00219252472743392,
+                -0.018851106986403465
+            ],
+            "scale": [
+                0.9999999403953552,
+                0.9999999403953552,
+                1.0
+            ],
+            "translation": [
+                0.02175735868513584,
+                -0.5404739379882813,
+                0.20095638930797577
+            ],
+            "mesh": 5,
+            "name": "DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-1"
+        },
+        {
+            "rotation": [
+                -0.6027292013168335,
+                0.6112732291221619,
+                0.35545048117637634,
+                -0.36975327134132385
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                -0.010317699983716011,
+                -0.5400071144104004,
+                0.22076494991779327
+            ],
+            "mesh": 6,
+            "name": "DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-3"
+        },
+        {
+            "rotation": [
+                -0.004757446702569723,
+                0.9147688150405884,
+                -0.010777365416288376,
+                0.4038059413433075
+            ],
+            "scale": [
+                1.0,
+                0.9999999403953552,
+                1.0
+            ],
+            "translation": [
+                -1.4760978474004675e-17,
+                -0.63978111743927,
+                0.2039446234703064
+            ],
+            "mesh": 7,
+            "name": "24-DYN-2100-03-R1 (Center Lock Nut)-1"
+        },
+        {
+            "rotation": [
+                0.6215803027153015,
+                -0.6134657859802246,
+                0.35165292024612427,
+                -0.3371022045612335
+            ],
+            "scale": [
+                0.9999999403953552,
+                0.9999999403953552,
+                1.0
+            ],
+            "translation": [
+                -0.01143965870141983,
+                -0.5408949851989746,
+                0.18309056758880615
+            ],
+            "mesh": 8,
+            "name": "DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-5"
+        },
+        {
+            "rotation": [
+                0.6215803027153015,
+                -0.6134657859802246,
+                0.35165292024612427,
+                -0.3371022045612335
+            ],
+            "scale": [
+                0.9999999403953552,
+                0.9999999403953552,
+                1.0
+            ],
+            "translation": [
+                0.01143965870141983,
+                -0.5400223731994629,
+                0.22011737525463104
+            ],
+            "mesh": 9,
+            "name": "DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-2"
+        },
+        {
+            "rotation": [
+                0.36975327134132385,
+                -0.35545048117637634,
+                0.6112732291221619,
+                -0.6027292013168335
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation": [
+                0.010317699983716011,
+                -0.5409102439880371,
+                0.18244297802448273
+            ],
+            "mesh": 10,
+            "name": "DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-6"
+        }
+    ],
+    "cameras": [
+        {
+            "type": "orthographic",
+            "orthographic": {
+                "xmag": 0.24591031455333737,
+                "ymag": 0.19002160670030613,
+                "zfar": 1.2495368475564506,
+                "znear": 0.867652048173181
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 1,
+                        "NORMAL": 2
+                    },
+                    "indices": 0,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5
+                    },
+                    "indices": 3,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 7,
+                        "NORMAL": 8
+                    },
+                    "indices": 6,
+                    "material": 1,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 10,
+                        "NORMAL": 11
+                    },
+                    "indices": 9,
+                    "material": 2,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 13,
+                        "NORMAL": 14
+                    },
+                    "indices": 12,
+                    "material": 3,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 16,
+                        "NORMAL": 17
+                    },
+                    "indices": 15,
+                    "material": 3,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 19,
+                        "NORMAL": 20
+                    },
+                    "indices": 18,
+                    "material": 3,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 22,
+                        "NORMAL": 23
+                    },
+                    "indices": 21,
+                    "material": 4,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 25,
+                        "NORMAL": 26
+                    },
+                    "indices": 24,
+                    "material": 3,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 28,
+                        "NORMAL": 29
+                    },
+                    "indices": 27,
+                    "material": 3,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 31,
+                        "NORMAL": 32
+                    },
+                    "indices": 30,
+                    "material": 3,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 29628,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                13255
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 13256,
+            "type": "VEC3",
+            "min": [
+                -0.08998993039131165,
+                -4.119968255444917e-17,
+                -0.08998993039131165
+            ],
+            "max": [
+                0.08998993039131165,
+                0.004000000189989805,
+                0.08998993039131165
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 13256,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 3372,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                1211
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1212,
+            "type": "VEC3",
+            "min": [
+                -0.006337469909340143,
+                -0.005080000031739473,
+                -0.00634999992325902
+            ],
+            "max": [
+                0.006337469909340143,
+                0.005080000031739473,
+                0.00634999992325902
+            ]
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1212,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 85086,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                39351
+            ]
+        },
+        {
+            "bufferView": 7,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 39352,
+            "type": "VEC3",
+            "min": [
+                -0.047649189829826355,
+                -0.6737430095672607,
+                0.15364612638950348
+            ],
+            "max": [
+                0.047649189829826355,
+                -0.5324233174324036,
+                0.2535363435745239
+            ]
+        },
+        {
+            "bufferView": 8,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 39352,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 9,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 38148,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                19841
+            ]
+        },
+        {
+            "bufferView": 10,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 19842,
+            "type": "VEC3",
+            "min": [
+                -0.00952636357396841,
+                -0.025399373844265938,
+                -0.02539999969303608
+            ],
+            "max": [
+                1.734723475976807e-18,
+                0.025399373844265938,
+                0.025355391204357147
+            ]
+        },
+        {
+            "bufferView": 11,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 19842,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 12,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 2298,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                1085
+            ]
+        },
+        {
+            "bufferView": 13,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -0.00317499996162951,
+                -0.0012700000079348683,
+                -0.00317499996162951
+            ],
+            "max": [
+                0.00317499996162951,
+                0.0012700000079348683,
+                0.00317499996162951
+            ]
+        },
+        {
+            "bufferView": 14,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 15,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 2298,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                1085
+            ]
+        },
+        {
+            "bufferView": 16,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -0.00317499996162951,
+                -0.0012700000079348683,
+                -0.00317499996162951
+            ],
+            "max": [
+                0.00317499996162951,
+                0.0012700000079348683,
+                0.00317499996162951
+            ]
+        },
+        {
+            "bufferView": 17,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 18,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 2298,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                1085
+            ]
+        },
+        {
+            "bufferView": 19,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -0.00317499996162951,
+                -0.0012700000079348683,
+                -0.00317499996162951
+            ],
+            "max": [
+                0.00317499996162951,
+                0.0012700000079348683,
+                0.00317499996162951
+            ]
+        },
+        {
+            "bufferView": 20,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 21,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 53292,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                24073
+            ]
+        },
+        {
+            "bufferView": 22,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24074,
+            "type": "VEC3",
+            "min": [
+                -0.0323476642370224,
+                -0.02850000001490116,
+                -0.0323476642370224
+            ],
+            "max": [
+                0.0323476642370224,
+                -0.003000000026077032,
+                0.0323476642370224
+            ]
+        },
+        {
+            "bufferView": 23,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24074,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 24,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 2298,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                1085
+            ]
+        },
+        {
+            "bufferView": 25,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -0.00317499996162951,
+                -0.0012700000079348683,
+                -0.00317499996162951
+            ],
+            "max": [
+                0.00317499996162951,
+                0.0012700000079348683,
+                0.00317499996162951
+            ]
+        },
+        {
+            "bufferView": 26,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 27,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 2298,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                1085
+            ]
+        },
+        {
+            "bufferView": 28,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -0.00317499996162951,
+                -0.0012700000079348683,
+                -0.00317499996162951
+            ],
+            "max": [
+                0.00317499996162951,
+                0.0012700000079348683,
+                0.00317499996162951
+            ]
+        },
+        {
+            "bufferView": 29,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 30,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 2298,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                1085
+            ]
+        },
+        {
+            "bufferView": 31,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -0.00317499996162951,
+                -0.0012700000079348683,
+                -0.00317499996162951
+            ],
+            "max": [
+                0.00317499996162951,
+                0.0012700000079348683,
+                0.00317499996162951
+            ]
+        },
+        {
+            "bufferView": 32,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1086,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "name": "mattesteel",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.38891028388129995,
+                    0.3488648621678924,
+                    0.31118052762160187,
+                    1.0
+                ],
+                "metallicFactor": 1.0,
+                "roughnessFactor": 0.5
+            }
+        },
+        {
+            "name": "satinfinishaluminum",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.7893137541670049,
+                    0.8277258041957908,
+                    0.8512516536623489,
+                    1.0
+                ],
+                "metallicFactor": 1.0,
+                "roughnessFactor": 0.4000000059604645
+            }
+        },
+        {
+            "name": "satinfinishaluminum",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.7893137541670049,
+                    0.8277258041957908,
+                    0.8512516536623489,
+                    1.0
+                ],
+                "metallicFactor": 1.0,
+                "roughnessFactor": 0.4000000059604645
+            }
+        },
+        {
+            "name": "satinfinishstainlesssteel",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.8912620430916338,
+                    0.8122415004576116,
+                    1.0
+                ],
+                "metallicFactor": 1.0,
+                "roughnessFactor": 0.4000000059604645
+            }
+        },
+        {
+            "name": "blueanodizedaluminum",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.028991187497512977,
+                    0.13320851755121507,
+                    0.4534565012079905,
+                    1.0
+                ],
+                "metallicFactor": 1.0,
+                "roughnessFactor": 0.5
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 118512,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 118512,
+            "byteLength": 159072,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 277584,
+            "byteLength": 159072,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 13488,
+            "target": 34963
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 13488,
+            "byteLength": 14544,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 28032,
+            "byteLength": 14544,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 2,
+            "byteOffset": 0,
+            "byteLength": 340344,
+            "target": 34963
+        },
+        {
+            "buffer": 2,
+            "byteOffset": 340344,
+            "byteLength": 472224,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 2,
+            "byteOffset": 812568,
+            "byteLength": 472224,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 3,
+            "byteOffset": 0,
+            "byteLength": 152592,
+            "target": 34963
+        },
+        {
+            "buffer": 3,
+            "byteOffset": 152592,
+            "byteLength": 238104,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 3,
+            "byteOffset": 390696,
+            "byteLength": 238104,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 4,
+            "byteOffset": 0,
+            "byteLength": 9192,
+            "target": 34963
+        },
+        {
+            "buffer": 4,
+            "byteOffset": 9192,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 4,
+            "byteOffset": 22224,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 5,
+            "byteOffset": 0,
+            "byteLength": 9192,
+            "target": 34963
+        },
+        {
+            "buffer": 5,
+            "byteOffset": 9192,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 5,
+            "byteOffset": 22224,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 6,
+            "byteOffset": 0,
+            "byteLength": 9192,
+            "target": 34963
+        },
+        {
+            "buffer": 6,
+            "byteOffset": 9192,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 6,
+            "byteOffset": 22224,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 7,
+            "byteOffset": 0,
+            "byteLength": 213168,
+            "target": 34963
+        },
+        {
+            "buffer": 7,
+            "byteOffset": 213168,
+            "byteLength": 288888,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 7,
+            "byteOffset": 502056,
+            "byteLength": 288888,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 8,
+            "byteOffset": 0,
+            "byteLength": 9192,
+            "target": 34963
+        },
+        {
+            "buffer": 8,
+            "byteOffset": 9192,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 8,
+            "byteOffset": 22224,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 9,
+            "byteOffset": 0,
+            "byteLength": 9192,
+            "target": 34963
+        },
+        {
+            "buffer": 9,
+            "byteOffset": 9192,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 9,
+            "byteOffset": 22224,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 10,
+            "byteOffset": 0,
+            "byteLength": 9192,
+            "target": 34963
+        },
+        {
+            "buffer": 10,
+            "byteOffset": 9192,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 10,
+            "byteOffset": 22224,
+            "byteLength": 13032,
+            "byteStride": 12,
+            "target": 34962
+        }
+    ],
+    "buffers": [
+        {
+            "uri": "1-1-24-DYN-2100-06-R1 (Front Brake Rotor)-1.bin",
+            "byteLength": 436656
+        },
+        {
+            "uri": "1-2-24-PTN-3100-08-R1 (Universal Brake Button)-1.bin",
+            "byteLength": 42576
+        },
+        {
+            "uri": "1-8-24-DYN-2100-01-R1 (Front Wheel Hub)-1.bin",
+            "byteLength": 1284792
+        },
+        {
+            "uri": "1-9-24-DYN-2100-04-R1 (Front Hub Nut)-1.bin",
+            "byteLength": 628800
+        },
+        {
+            "uri": "1-10-DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-4.bin",
+            "byteLength": 35256
+        },
+        {
+            "uri": "1-11-DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-1.bin",
+            "byteLength": 35256
+        },
+        {
+            "uri": "1-12-DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-3.bin",
+            "byteLength": 35256
+        },
+        {
+            "uri": "1-13-24-DYN-2100-03-R1 (Center Lock Nut)-1.bin",
+            "byteLength": 790944
+        },
+        {
+            "uri": "1-14-DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-5.bin",
+            "byteLength": 35256
+        },
+        {
+            "uri": "1-15-DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-2.bin",
+            "byteLength": 35256
+        },
+        {
+            "uri": "1-16-DL - 5848K51 - McMaster (.25 x .25  x 0.1 High Temp Neodymium Magnet)-6.bin",
+            "byteLength": 35256
+        }
+    ]
+}

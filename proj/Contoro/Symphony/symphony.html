@@ -39,12 +39,7 @@
                         </li>
                         <li>
                             <a href="#Mech" class="sidebar-button">
-                                Mechanical Design
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Controls" class="sidebar-button">
-                                Controls
+                                Design
                             </a>
                         </li>
                     </ul>
@@ -56,92 +51,84 @@
 
 			<section id="overview">
 				<header class="major">
-					<h2>Teleoperation Exoskeleton (Proprietary)</h2>
-                    <h3>
-                        This project acted as a remote controller for a larger, industrial arm that unloaded containers.
-                    </br>
-                    </br>    
-                        As this work is proprietary, I cannot disclose significant information or project specifics.
-                    </h3>
+					<h2>Teleoperation Exoskeleton</h2>
+                    <p>
+                        Teleoperation Suit for a Container-Unloading Robot
+                    </p>
+                    <div class="row comparison-row">
+                        <article class="col-6 col-12-xsmall work-item">
+                            <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Carpalold.png" alt="Top View" /></span>
+                            <p class="image-caption">Carpal (Wrist) Joint Iteration 1</p>
+                        </article>
+                        <article class="col-6 col-12-xsmall work-item">
+                            <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Carpalnew.png" alt="Top View" /></span>
+                            <p class="image-caption">Carpal (Wrist) Joint Iteration 2</p>
+                        </article>
+                        <article class="col-12 col-12-xsmall work-item">
+                            <h4>
+                                The goal of this project was to iterate upon an already existing Teleoperation Suit that controlled
+                                a container unloading robot. The project lasted only a month before being shelved,
+                                therefore although parts were quoted, they were never manufactured or tested.
+                            </h4>
+                        </article>
+                    </div>
 				</header>
 			</section>
 
-			<section id="Overview">
-				<h2>Overview</h2>
-                <div class="row comparison-row">
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Carpalold.png" alt="Top View" /></span>
-                        <p class="image-caption">Carpal Joint Iteration 1</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Carpalnew.png" alt="Top View" /></span>
-                        <p class="image-caption">Carpal Joint Iteration 2</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                    </article>
-                        
-                </div>
-			</section>
-
             <section id="Mech">
-				<h2>Mechanical Design</h2>
-                <h4></h4>
+				<h2>Design (Shelved)</h2>
                 <div class="row comparison-row">
                     <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Human.png" alt="Top View" /></span>
-                        <p class="image-caption">The 7 Degrees-of-Freedom of a Human Arm</p>
+                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/WristDia.png" 
+                            style="aspect-ratio: 850 / 634; object-fit: cover; object-position: 0px 20%;" alt="Top View" /></span>
+                        <p class="image-caption">Lines along which the Center-of-Rotation of the Wrist translates</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/HuWrist.png" alt="Top View" /></span>
+                        <p class="image-caption">Wrist Modes of Freedom</p>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <h4>
-                            The exoskeleton was designed with the intention of translating a human arm's 7 Degrees-of-Freedom
-                            into a standard industrial arm's 6 Degrees-of-Freedom. The primary industrial arm was
+                            The initial iteration of this Exoskeleton suit was completed rapidly, leaving a large amount of room for optimization.
                         </br>
                         </br>
-                            The industrial arm was primarily autonomous, unloading boxes from containers using computer vision, the goal
-                            of this project was to assist the arm in edge cases where the industrial arm would fail to understand its
-                            environment.
-                        </br>
-                        </br>
-                            Due to the nature of the arm and end-effector, the pronation/supination rotational axis of the wrist was
-                            replaced with a joystick that controlled the end-effector.
+                            There were two primary goals for this iteration:
+                            <ul>
+                                <li>
+                                    Ensure that the suit's rotational axes and range of motion were aligned with the operator's, 
+                                    permitting full ROM with minimal discomfort
+                                </li>
+                                <li>
+                                    Optimize by minimizing assembly mass, cost, and part count
+                                </li>
+                            </ul>
+                            Aligning the rotational axes of the suit with the operator's required a minor redesign of the carpal joint. The joint
+                            initially treated the wrist as a fixed ball joint, with one point as the center of rotation for both Flexion and
+                            Abduction/Adduction.
                         </h4>
-                    </article>
-                </div>
-			</section>
-
-            <section id="Controls">
-				<h2>Controls (Shelved)</h2>
-                <div class="row">
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/DAQ/firmwareflow.png" alt="Top View" /></span>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <h4>
-                            The controls for this project were shelved before being tested, however I was able to learn about 
-                            Forward Kinematics and Inverse Kinematics while developing an exoskeleton-to-industrial-arm mapping
-                            algorithm
-                            </br>
-                            </br>
-                            Each Degree-of-Freedom of the exoskeleton has an incremental and absolute encoder mounted, to keep track of rotational motion.
-                            The arm "lengths" (i.e. the distances between the rotational joints) are not adjustable besides the shoulder to elbow length.
-                            </br>
-                            </br>
-                            Knowing both the mechanical dimensions and the angles of rotation at all six joints, you can develop a series of 
-                            transformational matrices for pose using the <strong>Denavit-Hartenberg</strong> parameters. This 
-                            </br>
-                            </br>
-                            We can run the STM32 at a lower clock speed such as 120MHz so that the heat produced by the chip is minimal.
-                            Even at this speed, the bottleneck in performance will be the LTC's conversion time at around 100ms per Thermocouple.
-                            </br>
-                            </br>
-                            Once conversions are complete, the temperature data is dumped into a circular buffer which is then exported over UART
-                            to a csv (via a pyserial data logger). The STM's high speed ensures that a large buffer is unnecessary as we can select a
-                            high baud rate to ensure the buffer drains much faster than it is filled.
-                            </br>
-                            </br>
-                            The main.c file will initialize all necessary parts and contain the primary software loop ensuring the thermocouple to csv
-                            pipeline continues as long as the python file requests data.
-                        </h4>
+                            As shown in the images above, at any given moment, the Instantaneous center of rotation for Abduction/Adduction (hereby referred
+                            to as Deviation) is anywhere along the "1" line and the Instantaneous center of rotation for the Flexion motion
+                            is anywhere along the "2" line depending on orientation.
+                        </br>
+                        </br>
+                            The orientation of the operator's arm in the suit accomodated the Flexion CoR translation as it was along one
+                            of the suit's rotational axes. To accomodate the deviation translation, the joystick mount is allowed to slide
+                            "away" from the user.
+                        </br>
+                        </br>
+                            To minimize BOM size, parts that were fastened together were replaced with snaps, which gave the added benefit
+                            of easy serviceability. Additionally, to minimize part mass, non-structural steel parts were replaced with plastic
+                            and structural-steel parts were pocketed after FEA in Solidworks Simulation.
+                         </h4>
+                    </article>
+                    <article class="col-12 col-12-xsmall work-item" style="text-align: center;">
+                        <h2>
+                            This project was shelved after the unloading robot's autonomy increased significantly,
+                            thereby rendering this project obsolete.
+                        </h2>
                     </article>
                 </div>
 			</section>

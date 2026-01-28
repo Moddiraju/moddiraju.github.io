@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Wheel Hub - Manoj Oddiraju</title>
+        <link rel="icon" type="image/png" href="/../images/favicon.jpg">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<header id="header">
+			<div class="inner">
+				<nav>
+                    <ul class="labeled-icons">
+                        <li>
+                            <a href="/index.html" class="sidebar-button">
+                                <h3 class="icon solid fa-home"></h3>
+                                  Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/portfolio.html" class="sidebar-button">
+                                <h3 class="icon solid fa-images"></h3>
+                                Portfolio
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+				<hr />
+
+                <nav>
+                    <ul class="labeled-icons">
+                        <li>
+                            <a href="#overview" class="sidebar-button">
+                                Overview
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#CAD" class="sidebar-button">
+                                CAD
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Design" class="sidebar-button">
+                                Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Mfg" class="sidebar-button">
+                                Manufacturing
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+			</div>
+		</header>
+
+		<div id="main">
+
+			<section id="overview">
+				<header class="major">
+					<h2>Wheel Hub</h2>
+                    <p>
+                        FSAE EV 2024 Front Wheel Hub
+                    </p>
+				</header>
+                <div class="row comparison-row">
+                    <article class="col-4 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/proj/LHR/Hub/Images/Hub1.jpg" alt="Top View" /></span>
+                    </article>
+                    <article class="col-4 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/proj/LHR/Hub/Images/Hub2.jpg" alt="Top View" /></span>
+                        <p class="image-caption">Front Hub and <a href="../Brakes/brakes.html">Rotor Assembly (also mine) </a></p>
+                    </article>
+                    <article class="col-4 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/proj/LHR/Hub/Images/Hub3.jpg" alt="Top View" /></span>
+                    </article>
+                        
+                </div>
+			</section>
+
+            <section id="CAD">
+				<h2>CAD</h2>
+                <div class="row comparison-row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <model-viewer 
+                            src="/proj/LHR/Hub/Images/Hub/Hub.gltf" 
+                            ar 
+                            camera-controls
+                            interaction-prompt="auto"
+                            exposure="0.25"
+                            shadow-intensity="1"
+                            min-camera-orbit="auto auto 0%"
+                            max-camera-orbit="auto 180deg auto"
+                            style="width: 100%; height: 500px; background-color: #999999;">
+                        </model-viewer>
+                        <p class="image-caption">Front Wheel Hub (3D)</p>
+                    </article>
+
+                    <article class="col-6 col-12-xsmall work-item">
+                        <div class="pdf-wrapper" style="border-radius: 4px; height: 500px; overflow: hidden; line-height: 0;">
+                            <iframe 
+                                src="Images/HubDrw.pdf#toolbar=0&navpanes=0&view=Fit" 
+                                width="100%"
+                                height="100%"
+                                style="border: 0; vertical-align: middle;">
+                            </iframe>
+                        </div>
+                        <p class="image-caption" style="margin-top: 1em;">
+                            <a href="Images/HubDrw.pdf" target="_blank">Drawing (Expand)</a>
+                        </p>
+                    </article>
+                </div>
+			</section>
+
+            <section id="Design">
+				<h2>Design</h2>
+                <div class="row comparison-row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="image fit"><img src="/proj/LHR/Hub/Images/HubAssem.png" alt="Top View" /></span>
+                        <p class="image-caption">Front Wheel Hub Assembly (2023-24)</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h4>
+                            The front wheel hub's geometry was driven by two sources:
+                            <ul>
+                                <li>
+                                    Wheel dimensions, set by the OZ Racing 10" CL wheels we chose due to the
+                                    weight savings and impressive price
+                                </li>
+                                <li>
+                                    Bearing size, which is determined by choosing from the options offered to
+                                    us for free from SKF Bearings
+                                </li>
+                            </ul>
+                            After establishing both of these parts as fit & function requirements, the wheel hub was developed
+                            in iterations to minimize mass while passing FEA. This included loading in the following conditions:
+                            <ul>
+                                <li>
+                                    Hard Braking (Torque transmitted through the Rotor mount flange)
+                                </li>
+                                <li>
+                                    Hard Acceleration (Torque transmitted through the Wheel mount flange)
+                                </li>
+                                <li>
+                                    Cornering (Axial force through the hub, transmitted via the preloaded bearings to the upright)
+                                </li>
+                            </ul> 
+                        </h4>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h3>Material Selection</h3>
+                        <h4>
+                            We chose Alumnimum 7075-T6 as it was familiar, machinable, and had a great strength-to-weight ratio.
+                            Although it lacks an endurance limit (as opposed to steel), this fatigue concern was largely irrelevant
+                            since the fatigue curve predicted failure in excess of $10^8$ cycles, which we did not expect achieve with
+                            our "100 miles before competition" internal target.
+                        </br>
+                        </br>
+                            Additionally, the thermal characterstics of 7075-T6 were acceptable. The yield strength of this material hits
+                            a "cliff" at $\sim 150^\circ C$, which is well outside reasonable operating temperatures. A bigger concern was
+                            the thermal expansion coefficient, at $2.3\frac{\mu m}{m-^\circ C}$. To ensure that heat conduction to the hub
+                            was minimal, we introduced thermal resistance between the brake rotor (the primary heat source) and the rotor
+                            mounting flange on the hub by floating the rotor with titanium brake buttons. This ensured no direct contact between
+                            the rotor and the hub, and with titanium having a low thermal conductivity of $6.7 \frac{W}{m-^\circ K}$, there were
+                            significant barriers to heat flow into the hub.
+                        </h4>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h3>Calculations</h3>
+                        <h4>
+                            Six Dowel pins were installed in shear to transmit torques from the wheel to the hub. Using the following
+                            equation:
+
+                            $$\tau_{pin} = \frac{F_L \times r_{tire}}{r_{pin}\times \text{\# of pins} \times \frac{\pi}{4}d_{pin}^2}$$
+
+                            we can calculate the shear stress on any given pin, and to ensure that the reacting flanges don't tear out,
+                            we can use the following equation (utilizing some of the values calculated above):
+
+                            $$\sigma_{bearing} = \frac{F_{pin}}{d_{pin} \times \text{pin engagement}}$$
+
+                            We use this "projected area" to account for the fact that the pin cannot pull the hub, it can only push,
+                            therefore a calculation with the full contact area would yield an incorrectly high FOS.
+                            To avoid this trap, we check the FOS using the projected area in hand calcs, and we then validate these
+                            calcs in ANSYS FEA.
+                        </h4>
+                    </article>
+                </div>
+			</section>
+            <section id="Mfg">
+                <h2>Manufacturing</h2>
+                <div class="row comparison-row">
+                   <article class="col-6 col-12-xsmall work-item">
+                        <model-viewer 
+                            src="/proj/LHR/Hub/Images/HubAssem/HubAssem.gltf" 
+                            ar 
+                            camera-controls
+                            interaction-prompt="auto"
+                            exposure="0.25"
+                            shadow-intensity="1"
+                            min-camera-orbit="auto auto 0%"
+                            max-camera-orbit="auto 180deg auto"
+                            style="width: 100%; height: 500px; background-color: #999999;">
+                        </model-viewer>
+                        <p class="image-caption">Front Wheel Hub Assembly (3D)</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <h4>
+                            This part is still the most labor-intensive (and injury intensive, more on that later)
+                            part I have ever been involved in machining. The high-level operations went as follows:
+                            <ul>
+                                <li>
+                                    Turning and Boring the raw 4" McMaster cylinder stock (I only did half
+                                    as a chuck jaw failed during one of my turning passes and launched the part at my stomach
+                                    and putting me on a machining break), this formed the main flanges and form of the hub.
+                                </li>
+                                <li>
+                                    CAM in HSMWorks (RIP) to CNC Mill the threads, brake button cutouts, and dowel pin holes.
+                                </li>
+                            The most annoying part of this entire process was checking fit with the brake rotor and brake buttons
+                            and then shaving off another 0.0005" as needed to ensure there was no radial play in the buttons while
+                            allowing them to be installed with ease.
+                            
+                            </ul> 
+                        </h4>
+                    </article>
+                </div>
+			</section>
+		</div>
+
+		<script src="/../assets/js/jquery.min.js"></script>
+		<script src="/../assets/js/jquery.poptrox.min.js"></script>
+		<script src="/../assets/js/browser.min.js"></script>
+		<script src="/../assets/js/breakpoints.min.js"></script>
+		<script src="/../assets/js/util.js"></script>
+		<script src="/../assets/js/main.js"></script>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+        </script>
+	</body>
+</html>
+
+
+
+

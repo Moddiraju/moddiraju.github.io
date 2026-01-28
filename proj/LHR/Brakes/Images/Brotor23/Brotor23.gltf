@@ -1,0 +1,324 @@
+{
+    "asset": {
+        "generator": "SOLIDWORKSGLTF",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "name": "Default",
+            "nodes": [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "matrix": [
+                -0.4816567968392992,
+                -0.8046415820897608,
+                0.34721557342750786,
+                0.0,
+                -0.8294381898909383,
+                0.29065712088094847,
+                -0.4770227743322549,
+                0.0,
+                0.2829116809340856,
+                -0.5177551182299261,
+                -0.8073974351815627,
+                0.0,
+                -1.4368669805041228,
+                -0.3970224928405302,
+                -0.41904346836048534,
+                1.0
+            ],
+            "camera": 0,
+            "name": "current camera"
+        },
+        {
+            "children": [
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "name": "24-PTN-3101-R1 (Rear Brake Rotor Assembly)"
+        },
+        {
+            "rotation": [
+                -6.063656096289591e-28,
+                0.0002645833883434534,
+                -3.7361396658422355e-28,
+                1.0
+            ],
+            "translation": [
+                -0.00010775836562970653,
+                3.5596999367335286e-31,
+                -0.0008756898459978402
+            ],
+            "mesh": 0,
+            "name": "24-PTN-3100-07-R1 (Inboard Rear Rotor)-1"
+        },
+        {
+            "rotation": [
+                -8.065726979930246e-17,
+                0.8552817702293396,
+                1.0814317791779418e-16,
+                -0.5181632041931152
+            ],
+            "translation": [
+                -1.6069008111953735,
+                0.0020000040531158447,
+                0.20317460596561432
+            ],
+            "mesh": 1,
+            "name": "24-PTN-3100-08-R1 (Universal Brake Button)-2"
+        },
+        {
+            "rotation": [
+                -1.3350206719172215e-16,
+                0.9711722731590271,
+                1.9435467105409215e-17,
+                0.23837882280349731
+            ],
+            "translation": [
+                -1.65487539768219,
+                0.0020000040531158447,
+                0.25119999051094055
+            ],
+            "mesh": 1
+        },
+        {
+            "rotation": [
+                -1.9435467105409215e-17,
+                -0.23837882280349731,
+                -1.3350206719172215e-16,
+                0.9711722731590271
+            ],
+            "translation": [
+                -1.6549261808395386,
+                0.0020000040531158447,
+                0.15520000457763672
+            ],
+            "mesh": 1
+        },
+        {
+            "rotation": [
+                -1.0814317791779418e-16,
+                0.5181632041931152,
+                -8.065726979930246e-17,
+                0.8552817702293396
+            ],
+            "translation": [
+                -1.702900767326355,
+                0.0020000040531158447,
+                0.20322540402412415
+            ],
+            "mesh": 1
+        }
+    ],
+    "cameras": [
+        {
+            "type": "orthographic",
+            "orthographic": {
+                "xmag": 0.18589975193272923,
+                "ymag": 0.1436498083116544,
+                "zfar": 1.0265444531292367,
+                "znear": 0.6427448251007017
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 1,
+                        "NORMAL": 2
+                    },
+                    "indices": 0,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5
+                    },
+                    "indices": 3,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 22248,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                10559
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 10560,
+            "type": "VEC3",
+            "min": [
+                -1.7453351020812988,
+                0.0,
+                0.11276571452617645
+            ],
+            "max": [
+                -1.5644664764404297,
+                0.004000000189989805,
+                0.293634295463562
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 10560,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 3372,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                1211
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1212,
+            "type": "VEC3",
+            "min": [
+                -0.006337469909340143,
+                -0.005080000031739473,
+                -0.00634999992325902
+            ],
+            "max": [
+                0.006337469909340143,
+                0.005080000031739473,
+                0.00634999992325902
+            ]
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1212,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "name": "mattesteel",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.38891028388129995,
+                    0.3488648621678924,
+                    0.31118052762160187,
+                    1.0
+                ],
+                "metallicFactor": 1.0,
+                "roughnessFactor": 0.5
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 88992,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 88992,
+            "byteLength": 126720,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 215712,
+            "byteLength": 126720,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 0,
+            "byteLength": 13488,
+            "target": 34963
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 13488,
+            "byteLength": 14544,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 1,
+            "byteOffset": 28032,
+            "byteLength": 14544,
+            "byteStride": 12,
+            "target": 34962
+        }
+    ],
+    "buffers": [
+        {
+            "uri": "0-1-24-PTN-3100-07-R1 (Inboard Rear Rotor)-1.bin",
+            "byteLength": 342432
+        },
+        {
+            "uri": "0-2-24-PTN-3100-08-R1 (Universal Brake Button)-2.bin",
+            "byteLength": 42576
+        }
+    ]
+}

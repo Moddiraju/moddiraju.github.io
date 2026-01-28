@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Exoskeleton - Manoj Oddiraju</title>
+		<title>HV Enclosure - Manoj Oddiraju</title>
         <link rel="icon" type="image/png" href="/../images/favicon.jpg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -29,26 +29,6 @@
                 </nav>
 
 				<hr />
-
-                <nav>
-                    <ul class="labeled-icons">
-                        <li>
-                            <a href="#overview" class="sidebar-button">
-                                Overview
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Mech" class="sidebar-button">
-                                Mechanical Design
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Controls" class="sidebar-button">
-                                Controls
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
 			</div>
 		</header>
 
@@ -56,94 +36,41 @@
 
 			<section id="overview">
 				<header class="major">
-					<h2>Teleoperation Exoskeleton (Proprietary)</h2>
-                    <h3>
-                        This project acted as a remote controller for a larger, industrial arm that unloaded containers.
-                    </br>
-                    </br>    
-                        As this work is proprietary, I cannot disclose significant information or project specifics.
-                    </h3>
+					<h2>High Voltage Enclosure</h2>
+                    <p>
+                        High-Voltage Enclosure for Container-Unloading Robot
+                    </p>
+                    <div class="row comparison-row">
+                        <article class="col-6 col-12-xsmall work-item">
+                            <span class="image fit"><img src="/proj/Contoro/HV/Images/HV.png" alt="Top View" /></span>
+                            <p class="image-caption">Revision D High-Voltage Enclosure</p>
+                        </article>
+                        <article class="col-6 col-12-xsmall work-item">
+                            <h4>
+                                The goal of this project was to isolate all High-Voltage (>48V) components on the Unloading Robot
+                                into an enclosure that is water-resistant. The enclosure only needed to survive moisture build-up and
+                                short rain exposure (such as the small uncovered gap present at loading docks).
+
+                            </br>
+                            </br>
+                                This was accomplished via a powdercoated 5052-H32 enclosure that was grounded and mounted
+                                to the chassis of the robot. This enclosure had 3 480V inlet ports, 4 120V outlet ports, and
+                                a water-resistant cable pass through to power various robot peripherals.
+                            </br>
+                            </br>
+                                The enclosure itself was designed with various mounting plates within (all grounded to the main enclosure)
+                                to rapidly mount/dismount components as needed. It also had a handle which connected to the main breaker,
+                                thereby acting as an easily accesible E-Stop.
+                            </br>
+                            </br>
+                                The required airflow can be calculated using the standard HVAC sensible heat equation:
+                                $$CFM = \frac{\text{Sensible Heat (BTU/h)}}{1.08 \times \Delta T}$$
+
+                                Where we can derive the Sensible Heat from efficiencies listed in the datasheet for each component
+                                enclosed. This drove fan sizing, with a \(\Delta T = 10 ^\circ \text{C}\) being deemed reasonable.
+                        </article>
+                    </div>
 				</header>
-			</section>
-
-			<section id="Overview">
-				<h2>Overview</h2>
-                <div class="row comparison-row">
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Carpalold.png" alt="Top View" /></span>
-                        <p class="image-caption">Carpal Joint Iteration 1</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Carpalnew.png" alt="Top View" /></span>
-                        <p class="image-caption">Carpal Joint Iteration 2</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                    </article>
-                        
-                </div>
-			</section>
-
-            <section id="Mech">
-				<h2>Mechanical Design</h2>
-                <h4></h4>
-                <div class="row comparison-row">
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/proj/Contoro/Symphony/Images/Human.png" alt="Top View" /></span>
-                        <p class="image-caption">The 7 Degrees-of-Freedom of a Human Arm</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <h4>
-                            The exoskeleton was designed with the intention of translating a human arm's 7 Degrees-of-Freedom
-                            into a standard industrial arm's 6 Degrees-of-Freedom. The primary industrial arm was
-                        </br>
-                        </br>
-                            The industrial arm was primarily autonomous, unloading boxes from containers using computer vision, the goal
-                            of this project was to assist the arm in edge cases where the industrial arm would fail to understand its
-                            environment.
-                        </br>
-                        </br>
-                            Due to the nature of the arm and end-effector, the pronation/supination rotational axes of the wrist were
-                            replaced with a joystick that controlled the end-effector.
-                        </h4>
-                    </article>
-                </div>
-			</section>
-
-            <section id="Controls">
-				<h2>Controls (Shelved)</h2>
-                <div class="row">
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="image fit"><img src="/../images/proj/DAQ/firmwareflow.png" alt="Top View" /></span>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <h4>
-                            The controls for this project were shelved before being tested, however I was able to learn about 
-                            Forward Kinematics and Inverse Kinematics while developing an exoskeleton-to-industrial-arm mapping
-                            algorithm
-                            </br>
-                            </br>
-                            Each Degree-of-Freedom of the exoskeleton has an incremental and absolute encoder mounted, to keep track of rotational motion.
-                            The arm "lengths" (i.e. the distances between the rotational joints) are not adjustable besides the shoulder to elbow length.
-                            </br>
-                            </br>
-                            Knowing both the mechanical dimensions and the angles of rotation at all six joints, you can develop a series of 
-                            transformational matrices for pose.
-                            </br>
-                            </br>
-                            We can run the STM32 at a lower clock speed such as 120MHz so that the heat produced by the chip is minimal.
-                            Even at this speed, the bottleneck in performance will be the LTC's conversion time at around 100ms per Thermocouple.
-                            </br>
-                            </br>
-                            Once conversions are complete, the temperature data is dumped into a circular buffer which is then exported over UART
-                            to a csv (via a pyserial data logger). The STM's high speed ensures that a large buffer is unnecessary as we can select a
-                            high baud rate to ensure the buffer drains much faster than it is filled.
-                            </br>
-                            </br>
-                            The main.c file will initialize all necessary parts and contain the primary software loop ensuring the thermocouple to csv
-                            pipeline continues as long as the python file requests data.
-                        </h4>
-                    </article>
-                </div>
 			</section>
 
 		</div>
@@ -154,6 +81,7 @@
 		<script src="/../assets/js/breakpoints.min.js"></script>
 		<script src="/../assets/js/util.js"></script>
 		<script src="/../assets/js/main.js"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 
 	</body>
 </html>

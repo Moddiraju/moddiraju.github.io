@@ -4,6 +4,24 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  },
+  options: {
+    enableMenu: false // Keeps the UI clean for your template
+  }
+};
+
+(function() {
+  var script = document.createElement('script');
+  script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+  script.async = true;
+  document.head.appendChild(script);
+})();
+
 (function($) {
 
 	var $window = $(window),

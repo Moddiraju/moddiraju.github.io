@@ -1,0 +1,162 @@
+{
+    "asset": {
+        "generator": "SOLIDWORKSGLTF",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "name": "Default",
+            "nodes": [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "matrix": [
+                0.6922740624336513,
+                -0.7215569774827596,
+                0.010590124057518358,
+                0.0,
+                0.3995426453211258,
+                0.39546609423875534,
+                0.8270261440107809,
+                0.0,
+                -0.6009345197701712,
+                -0.5682975422729615,
+                0.5620637031468102,
+                0.0,
+                -0.44808124805292227,
+                -1.0268289539969864,
+                0.6226888177072286,
+                1.0
+            ],
+            "camera": 0,
+            "name": "current camera"
+        },
+        {
+            "mesh": 0,
+            "name": "24-DYN-2100-01-R1 (Front Wheel Hub)"
+        }
+    ],
+    "cameras": [
+        {
+            "type": "orthographic",
+            "orthographic": {
+                "xmag": 0.19398404362257307,
+                "ymag": 0.14989676098107918,
+                "zfar": 0.9433433925248629,
+                "znear": 0.6467893838839291
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 1,
+                        "NORMAL": 2
+                    },
+                    "indices": 0,
+                    "material": 0,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 85086,
+            "type": "SCALAR",
+            "min": [
+                0
+            ],
+            "max": [
+                39351
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 39352,
+            "type": "VEC3",
+            "min": [
+                -0.047649189829826355,
+                -0.6737430095672607,
+                0.15364612638950348
+            ],
+            "max": [
+                0.047649189829826355,
+                -0.5324233174324036,
+                0.2535363435745239
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 39352,
+            "type": "VEC3",
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "name": "satinfinishaluminum",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.7893137541670049,
+                    0.8277258041957908,
+                    0.8512516536623489,
+                    1.0
+                ],
+                "metallicFactor": 1.0,
+                "roughnessFactor": 0.4000000059604645
+            }
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 340344,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 340344,
+            "byteLength": 472224,
+            "byteStride": 12,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 812568,
+            "byteLength": 472224,
+            "byteStride": 12,
+            "target": 34962
+        }
+    ],
+    "buffers": [
+        {
+            "uri": "24-DYN-2100-01-R1 (Front Wheel Hub).bin",
+            "byteLength": 1284792
+        }
+    ]
+}
